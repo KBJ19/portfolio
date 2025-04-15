@@ -1,38 +1,28 @@
 import streamlit as st
-from utils import generate_response  # using HuggingFace-powered response
+from utils import generate_response
 
-st.set_page_config(page_title="Khushal Jhaveri | Portfolio", layout="wide")
-
-st.sidebar.title("📁 Navigation")
-st.sidebar.page_link("pages/About.py", label="About Me")
-st.sidebar.page_link("pages/Experience.py", label="Experience")
-st.sidebar.page_link("pages/Projects.py", label="Projects")
-st.sidebar.page_link("pages/Blog.py", label="Blog")
-st.sidebar.page_link("pages/Contact.py", label="Contact")
+st.set_page_config(page_title="Chat with Khushal", layout="wide")
 
 st.title("🤖 Chat with Khushal")
+st.markdown("Greetings, Human! 👋 I'm an AI trained to answer questions about Khushal's projects, experience, and journey. Ask me anything!")
 
-st.markdown("""
-Greetings, Human! 👋 I'm an AI trained to answer questions about Khushal's projects, experience, and journey. Ask me anything!
-""")
+query = st.text_input("What would you like to know?", placeholder="Try: What are Khushal's best projects?")
 
-user_query = st.text_input("What would you like to know?", placeholder="Try: What are Khushal's best projects?")
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    if st.button("Who is Khushal?"):
+        query = "Who is Khushal?"
+with col2:
+    if st.button("What are Khushal's skills?"):
+        query = "What are Khushal's skills?"
+with col3:
+    if st.button("What are Khushal's achievements?"):
+        query = "What are Khushal's achievements?"
+with col4:
+    if st.button("How can I contact Khushal?"):
+        query = "How can I contact Khushal?"
 
-if user_query:
+if query:
     with st.spinner("Thinking..."):
-        response = generate_response(user_query)
-        st.success(response)
-
-st.markdown("**Quick Questions:**")
-cols = st.columns(4)
-quick_prompts = [
-    "Who is Khushal?",
-    "What are Khushal's skills?",
-    "What are Khushal's achievements?",
-    "How can I contact Khushal?"
-]
-
-for i, prompt in enumerate(quick_prompts):
-    if cols[i].button(prompt):
-        response = generate_response(prompt)
+        response = generate_response(query)
         st.success(response)
