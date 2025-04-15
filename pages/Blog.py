@@ -1,3 +1,3 @@
-# Blog
-
-Coming soon! I'll be writing about my AI journey, internship lessons, and startup experiences.
+import streamlit as st
+st.title("Blog")
+st.write("Coming soon! A space for me to write about what I'm learning.")

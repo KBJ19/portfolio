@@ -1,5 +1,3 @@
-# Experience
-
-- Deep Learning Engineer Intern @ ResoluteAI
-- Machine Learning Intern @ Suvidha Foundation
-- Marketing Head @ BloomBox
+import streamlit as st
+st.title("Experience")
+st.write("Here's a summary of my professional and academic experience.")

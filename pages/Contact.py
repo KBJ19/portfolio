@@ -1,5 +1,3 @@
-# Contact
-
-📧 Email: khushalbjhaveri@gmail.com
-🔗 LinkedIn: [linkedin.com/in/khushaljhaveri](https://linkedin.com/in/khushaljhaveri)
-💻 GitHub: [github.com/KBJ19](https://github.com/KBJ19)
+import streamlit as st
+st.title("Contact Me")
+st.write("Email: khushal@example.com\n\nLinkedIn: https://linkedin.com/in/khushaljhaveri")
