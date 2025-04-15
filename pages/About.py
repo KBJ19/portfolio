@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("👋 About Me")
 
-st.markdown("""
+st.write("""
 Hi, I'm **Khushal Jhaveri** — currently pursuing my Master’s in Computer Science with a focus on Artificial Intelligence at the **University of Southern California (USC)**. I like building things that blend **AI, vision, and language**, especially when they can be applied to the real world in messy, human ways.
 
 Over the past few years, I've been lucky to work on projects that go beyond just accuracy scores. Whether it was building a multimodal emotion detector using facial cues, audio, and text — or developing computer vision tools to improve blurry textbook scans for rural education — the goal has always been to make AI *feel* a little more useful, a little more human.
