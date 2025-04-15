@@ -5,7 +5,6 @@ def generate_response(query):
     with open("khushal_ai_assistant_context.txt", "r") as f:
         context = f.read()
 
-
     prompt = f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:"
 
     API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
@@ -23,7 +22,6 @@ def generate_response(query):
         response = requests.post(API_URL, headers=headers, json=payload)
         print("Status Code:", response.status_code)
         print("Raw Response:", response.text)
-
         result = response.json()
         return result[0]["generated_text"]
     except Exception as e:
