@@ -1,0 +1,30 @@
+{
+  "projects": [
+    "Multimodal Emotion Recognition with Audio, Text, and Vision",
+    "YouTube Transcript Summarizer with LLMs",
+    "Gallbladder Stone Detection in Ultrasound Images",
+    "Sign Language to Text Translator with LSTM",
+    "Sorting Algorithm Visualization using Vision Transformers & GANs",
+    "Vocabulary Generator for NLP Tasks",
+    "Amazon Product Review Sentiment Analysis"
+  ],
+  "skills": [
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "OpenCV",
+    "Streamlit",
+    "YOLOv8",
+    "NLP",
+    "LSTM",
+    "GANs"
+  ],
+  "achievements": [
+    "Built AI tools for healthcare, accessibility, and education",
+    "Developed an AI-powered chatbot portfolio",
+    "Hosted 1000+ attendee startup event at BloomBox",
+    "Worked on real-world drone and inspection data at ResoluteAI",
+    "Built ML-based text recovery tools for underprivileged students"
+  ],
+  "contact": "khushalbjhaveri@gmail.com"
+}
