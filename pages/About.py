@@ -5,13 +5,13 @@ st.title("👋 About Me")
 st.write("""
 Hi, I'm **Khushal Jhaveri** — currently pursuing my Master’s in Computer Science with a focus on Artificial Intelligence at the **University of Southern California (USC)**.
 
-I love building systems that sit at the intersection of **AI, vision, and language**, especially when they solve real-world problems — the kind where datasets are messy, edge cases are the norm, and impact matters more than benchmarks.
+I like building systems that sit at the intersection of **AI, vision, and language** — things that make machines understand humans a little better, and maybe even help out in the real world.
 
-Over the past few years, I've worked on projects that go well beyond accuracy scores. Whether it was building a **multimodal emotion detector** using video, audio, and text, or improving **textbook readability for underprivileged kids** using nothing but OpenCV — the goal has always been to make tech more **grounded, useful, and human**.
+Over the past few years, I’ve worked on everything from **multimodal emotion recognition** using video, audio, and text, to building **drone vision systems** for agriculture, to improving **textbook readability for underprivileged girls** with nothing but OpenCV and a purpose.
 
-Before USC, I did my B.Tech in Computer Engineering at **K.J. Somaiya College in Mumbai**, with an Honors in Cybersecurity. Alongside academics, I led as **Marketing Head at BloomBox**, our entrepreneurship cell — where I pitched, fundraised, hosted, and pulled off events with 1000+ people and keynote speakers like Ashneer Grover. Learned more about teamwork and real-world leadership there than from any classroom.
+Before USC, I completed my B.Tech in Computer Engineering from **K.J. Somaiya College of Engineering**, Mumbai, with an Honors in Cybersecurity. I was also the **Marketing Head of BloomBox**, our entrepreneurship cell, where I led large-scale events, fundraising, and community engagement — including organizing a 1000+ attendee event with Ashneer Grover as keynote speaker.
 
-Professionally, I’ve worked as a **Deep Learning Engineer Intern at ResoluteAI**, building drone imaging solutions and YOLOv8-based detection pipelines for agriculture and infrastructure. At **Suvidha Foundation**, I worked on enhancing low-quality book scans to help improve access to education for rural girls — small project, big impact.
+Professionally, I’ve interned as a **Deep Learning Engineer at ResoluteAI**, leading proof-of-concept projects involving drone imaging, YOLOv8 models, and traditional CV pipelines. I also worked at **Suvidha Foundation**, enhancing educational material scans for underprivileged communities using OpenCV and morphological operations.
 
 ---
 
@@ -19,34 +19,37 @@ Professionally, I’ve worked as a **Deep Learning Engineer Intern at ResoluteAI
 
 I’m not just about code and models — I thrive in chaos too.
 
-I’ve run national startup events, built sponsorship decks from scratch, and volunteered as speaker coordinator and emcee. I’m an **extrovert**, but one who **dives deep** — into neural nets, business strategy, or even martial arts. I learn best when I get to explore the "why" behind things.
+I’ve hosted events, built sponsorship decks, run logistics for national startup summits, and volunteered as a speaker coordinator. These experiences shaped how I think about leadership, storytelling, and problem-solving.
+
+I’m an **extrovert**, but one who **dives deep** — into architecture design, business decks, or old-school martial arts katas. I learn best when I explore things thoroughly, and I ask a lot of “why’s” along the way.
+
+---
+
+### 🌱 Things I'm Exploring
+
+- Using AI for **education and accessibility**
+- Building **low-cost healthcare tools** via computer vision
+- LLMs for **summarization, creativity, and context-aware assistants**
+- Cloud systems that scale smart — I’m also **Azure certified**
 
 ---
 
 ### ☕ Things I Love Outside Tech
 
-- 🍜 **Food** — Big-time foodie. Catch me chasing street food in Mumbai or slow-roasting something random at 2am.
-- 📸 **Photography** — Mostly candid, raw, and in-the-moment. I like capturing people in their realest moods.
-- 🚴‍♂️ **Cycling** — Long solo rides at night are my therapy.
-- 🥋 **Martial Arts** — Trained and practiced. Nothing humbles you like a good kata.
-- 🚗 **Cars** — Road, engine, design — if it moves, I’m curious.
+- 🍜 **Food** — Big-time foodie. I love discovering new places, trying new cuisines, and cooking wildly experimental things at home.
+- 📸 **Photography** — Mostly candid, street, and the occasional perfectly timed sunset or cloud obsession.
+- 🚴‍♂️ **Cycling** — Long night rides are my version of therapy and brainstorming.
+- 🥋 **Martial Arts** — Trained, practiced, and still humbled by it.
+- 🚗 **Cars** — Both under the hood and on the track. If it moves, I’m curious.
 
 ---
 
-### 🌱 Currently Exploring
+### 🧠 My Current Mindset
 
-- AI for **education** and **healthcare accessibility**
-- Emotion & sentiment systems for **context-aware assistants**
-- LLMs for **summarization and creativity**
-- Cloud systems that scale smart — I’m also **Azure Certified** (Microsoft Learn)
+I’m not chasing the fanciest solution — I want the **right** one. Whether that’s GANs or just clever thresholding in OpenCV, I enjoy going deep, failing fast, iterating, and making something that actually works.
 
----
+And if I can help someone else along the way — whether it’s through mentoring, collaboration, or just sharing what I’ve learned — I’m all in for it.
 
-### 🧠 My Mindset
-
-I don’t chase the fanciest model — I chase the one that **works**. If clever thresholding in OpenCV solves the problem better than deep learning, so be it. I love prototyping fast, failing smart, and getting things into the wild.
-
-And if I can help someone else build better — whether through open-source, mentoring, or just vibing over shared ideas — I’m all in.
-
-Thanks for dropping by :)
+Thanks for dropping by :)  
+If any of that resonates — feel free to explore the other pages or reach out!
 """)
