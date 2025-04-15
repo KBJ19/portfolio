@@ -7,10 +7,12 @@ st.set_page_config(page_title="About | Khushal Jhaveri", layout="wide")
 col1, col2 = st.columns([1, 3])
 with col1:
     image = Image.open("assets/profile-pic (3).png")
-    st.image(image, caption="Khushal Jhaveri", width=180, use_container_width=False)
+    st.image(image, caption="Khushal Jhaveri", width=180)
 
 with col2:
+    st.markdown("## ")  # Blank line to nudge text up
     st.title("👋 About Me")
+
 
     st.markdown("""
 Hi, I'm **Khushal Jhaveri** — currently pursuing my Master’s in Computer Science with a focus on Artificial Intelligence at the **University of Southern California (USC)**.
