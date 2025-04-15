@@ -1,7 +1,8 @@
 import streamlit as st
-from utils import load_data, generate_response
+from utils import generate_response  # using HuggingFace-powered response
 
 st.set_page_config(page_title="Khushal Jhaveri | Portfolio", layout="wide")
+
 st.sidebar.title("📁 Navigation")
 st.sidebar.page_link("About", label="About Me")
 st.sidebar.page_link("Experience", label="Experience")
@@ -19,8 +20,7 @@ user_query = st.text_input("What would you like to know?", placeholder="Try: Wha
 
 if user_query:
     with st.spinner("Thinking..."):
-        data = load_data()
-        response = generate_response(user_query, data)
+        response = generate_response(user_query)
         st.success(response)
 
 st.markdown("**Quick Questions:**")
@@ -34,6 +34,5 @@ quick_prompts = [
 
 for i, prompt in enumerate(quick_prompts):
     if cols[i].button(prompt):
-        data = load_data()
-        response = generate_response(prompt, data)
+        response = generate_response(prompt)
         st.success(response)
