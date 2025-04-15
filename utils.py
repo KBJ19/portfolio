@@ -3,7 +3,7 @@ import streamlit as st
 
 def generate_response(query):
     with open("khushal_ai_assistant_context.txt", "r") as f:
-    context = f.read()
+        context = f.read()
 
 
     prompt = f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:"
