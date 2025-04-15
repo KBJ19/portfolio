@@ -3,30 +3,36 @@ import streamlit as st
 st.title("👋 About Me")
 
 st.write("""
-Hi, I'm **Khushal Jhaveri** — currently pursuing my Master’s in Computer Science with a focus on Artificial Intelligence at the **University of Southern California (USC)**. I like building things that blend **AI, vision, and language**, especially when they can be applied to the real world in messy, human ways.
+Hi, I'm **Khushal Jhaveri** — currently pursuing my Master’s in Computer Science with a focus on Artificial Intelligence at the **University of Southern California (USC)**.
 
-Over the past few years, I've been lucky to work on projects that go beyond just accuracy scores. Whether it was building a multimodal emotion detector using facial cues, audio, and text — or developing computer vision tools to improve blurry textbook scans for rural education — the goal has always been to make AI *feel* a little more useful, a little more human.
+I like building systems that live at the intersection of **AI, vision, and language** — things that make machines understand humans a little better, and maybe even help out in the real world.
 
-Before USC, I completed my B.Tech in Computer Engineering from K.J. Somaiya College in Mumbai, with an Honors in Cybersecurity. I was also the **Marketing Head of BloomBox**, our entrepreneurship cell, where I led large-scale events and funding efforts — which, by the way, taught me more about leadership than any classroom ever could.
+Over the past few years, I’ve worked on everything from **multimodal emotion recognition** using video, audio, and text, to building drone vision systems for agriculture, to improving textbook readability for underprivileged girls with nothing but OpenCV and a purpose.
 
-I’ve worked as a **Deep Learning Engineer Intern at ResoluteAI**, leading proof-of-concept projects for clients involving drone imaging, YOLOv8 models, and traditional computer vision — sometimes ditching deep learning altogether when CV worked better. I’ve also interned at **Suvidha Foundation**, using OpenCV to enhance scanned educational material for underprivileged girls.
-
-Outside of tech, I’ve worn many hats — fundraiser, speaker coordinator, pitch deck builder, and event host. I believe all of that shapes how I think about problem-solving today.
+I'm also a certified **Microsoft Azure Fundamentals** cloud developer, and enjoy taking ideas all the way from a prototype to something that runs reliably.
 
 ---
 
-### 🌱 Things I'm exploring
-- Using AI for education and accessibility
-- Low-cost healthcare tools via computer vision
-- LLMs for summarization, creativity, and context-aware dialogue
-- Cloud systems that scale smartly — I’m **Azure certified** too
+### 💬 Outside the Resume
+
+I’m not just about code and models — I love putting myself out there.
+
+I’ve hosted events, built sponsorship decks, run logistics for 1000+ people, and helped organize national startup summits. I enjoy learning how people think, what makes them tick, and how good design and tech can be a bridge between people and systems.
+
+I’m an **extrovert**, but also someone who **likes going deep** — whether it’s a model architecture, a business deck, or an old-school martial arts kata. I learn best when I understand things thoroughly, and I ask a lot of “why’s” along the way.
 
 ---
 
-### 🧠 My current mindset
-I’m not chasing the fanciest solution — I want the **right** one. Whether that’s GANs or just clever thresholding in OpenCV, I enjoy going deep, failing a bit, iterating, and making something that works.
+### ☕ Things I Love Outside Tech
 
-And if I can help someone else along the way — whether it’s through mentoring, collabs, or just open-source — that’s a bonus I’ll always take.
+- 🍜 **Food** — big-time foodie, always up to explore new places or cook something wildly experimental.
+- 📸 **Photography** — mostly candid, street, and the occasional cloud obsession.
+- 🚴‍♂️ **Cycling** — long night rides are my version of therapy.
+- 🥋 **Martial Arts** — trained in it, practiced it, loved it.
+- 🚗 **Cars** — both on road and under the hood. If it moves, I’m curious.
+  
+---
 
-Thanks for dropping by :)
+Thanks for reading all the way :)  
+If any of that connects with you — feel free to reach out or check out my work across the other tabs.
 """)
