@@ -8,86 +8,87 @@ Here’s a curated showcase of the projects I’ve built — where AI, vision, a
 """)
 
 # Multimodal Emotion Recognition
-with st.container():
-    st.subheader("🧠 Multimodal Emotion Recognition")
+with st.expander("🧠 Multimodal Emotion Recognition"):
     st.markdown("""
-    One of my most fulfilling projects — building a system that can understand **how people feel** by analyzing not just what they say, but *how* they say it and *how* they look while saying it.
+One of my most fulfilling projects — building a system that can understand **how people feel** by analyzing not just what they say, but *how* they say it and *how* they look while saying it.
 
-    Using the **MELD** dataset (multi-modal emotion dialogues from Friends), I extracted:
-    - **Facial features** using **MediaPipe** + downsampled **ResNet embeddings**
-    - **Audio tone** using **Librosa** features like chroma, MFCCs, and spectral contrast
-    - **Transcript embeddings** using both **TF-IDF** and pre-trained **Word2Vec**
-    
-    I aligned these at the utterance level, fused them via early fusion, and trained a **bi-directional LSTM** to classify emotion.
+Using the **MELD** dataset (multi-modal emotion dialogues from *Friends*), I extracted:
+- **Facial features** using **MediaPipe** for landmark extraction and downsampled **ResNet** for visual embeddings
+- **Audio tone** using **Librosa** features like chroma, MFCCs, zero-crossing rate, and spectral contrast
+- **Transcript embeddings** using both **TF-IDF** and pre-trained **Word2Vec**
 
-    The result? A ~74% test accuracy on a 7-class emotion set — and a deeper appreciation for **multimodal alignment** and **temporal feature fusion**.
-    """)
+I aligned these three modalities at the utterance level, fused them using **early fusion**, and trained a **bi-directional LSTM** to classify emotions. This also included dropout regularization, gradient clipping, and class-balancing to handle underrepresented emotions.
+
+Achieved ~74% test accuracy across 7 emotion classes. More than the accuracy, this project taught me the nuances of **temporal alignment**, **feature fusion**, and how to design models that feel more *emotionally aware*.
+""")
     st.caption("Tags: #DeepLearning #Multimodal #LSTM #NLP #ComputerVision")
 
 # Gallbladder Stone Detection
 with st.expander("📟 Gallbladder Stone Detection (Ultrasound)"):
     st.markdown("""
-    Built a lightweight CNN classifier for **diagnosing gallbladder stones** from noisy, low-resolution ultrasound images — aimed at **rural medical settings** where specialists are scarce.
+Built a lightweight CNN classifier for **diagnosing gallbladder stones** from noisy, low-resolution ultrasound images — aimed at **rural medical settings** where specialists are scarce.
 
-    - Used **OpenCV** to enhance scan clarity via histogram equalization, bilateral filtering, and threshold-based segmentation
-    - Developed a **custom TensorFlow CNN** with low parameter count to fit low-power devices
-    - Integrated interpretability via **Grad-CAM** to highlight possible stone regions
+- Used **OpenCV** to enhance scan clarity via histogram equalization, bilateral filtering, and contour thresholding
+- Trained a custom **TensorFlow CNN** architecture to work on edge devices
+- Implemented **Grad-CAM** visualizations to highlight detected regions for interpretability
 
-    This was a great blend of medical imaging, classical preprocessing, and responsible model design for accessibility.
-    """)
+This was my first attempt at responsible AI for healthcare — balancing performance with accessibility.
+""")
     st.caption("Tags: #MedicalImaging #TensorFlow #CNN #OpenCV")
 
 # YouTube Transcript Summarizer
 with st.expander("📽️ YouTube Transcript Summarizer"):
     st.markdown("""
-    Ever wanted to **get the gist of a 30-minute talk** in 30 seconds? I built this tool for exactly that.
+A tool to help you get the **key takeaways from long videos**, fast.
 
-    - Extracts subtitles using `youtube-transcript-api`
-    - Breaks them into coherent semantic chunks using sliding context windows
-    - Feeds them into **OpenAI GPT** with tuned prompts for summarization
-    - Outputs section-wise summaries that retain nuance
+- Extracted subtitles using `youtube-transcript-api`
+- Cleaned and chunked them semantically using sliding window + cosine similarity
+- Fed chunks to **OpenAI's GPT API** with tailored summarization prompts
+- Integrated into a **Streamlit frontend** for real-time use
 
-    Wrapped the entire workflow in a Streamlit UI. I used this tool myself to summarize AI lectures and keynotes.
-    """)
+This project taught me prompt engineering, semantic coherence, and usability design — and I still use it myself.
+""")
     st.caption("Tags: #LLM #Summarization #PromptEngineering #Streamlit")
 
 # Amazon Sentiment Classifier
 with st.expander("🛒 Amazon Review Sentiment Classifier"):
     st.markdown("""
-    A full-fledged sentiment analysis pipeline that classifies product reviews as **positive**, **neutral**, or **negative** — using an **LSTM with attention**.
+Built a full NLP pipeline to classify Amazon reviews into **positive**, **neutral**, or **negative** using:
 
-    - Cleaned review text (punctuation, stopwords, lemmatization)
-    - Tokenized and embedded with **GloVe**
-    - Trained a deep **LSTM** followed by attention mechanism for long-range dependency handling
+- **Text cleaning**: punctuation stripping, lemmatization, lowercasing
+- **Embedding layer** using pre-trained **GloVe vectors**
+- **LSTM with attention layer** for long-term dependencies
+- Trained using weighted cross-entropy loss to handle class imbalance
 
-    This project made me comfortable with **sequence modeling**, **imbalanced dataset handling**, and tuning **loss functions** (e.g. focal loss for rare sentiments).
-    """)
+This gave me hands-on practice with sequence modeling, custom attention blocks, and evaluation beyond accuracy (precision, F1).
+""")
     st.caption("Tags: #SentimentAnalysis #LSTM #Attention #NLP")
 
 # Vocabulary Generator
 with st.expander("🧾 Vocabulary Generator"):
     st.markdown("""
-    I built this project for students like me who wanted to expand their vocab — **without relying on static word lists**.
+A creative NLP project that helps users find **high-impact vocabulary** starting from a seed word.
 
-    - Takes a seed word (e.g. “happy”) and returns semantically related **advanced vocabulary** (e.g. “elated”, “jubilant”, “exuberant”)
-    - Powered by custom **Word2Vec + FastText** ensemble embeddings
-    - Fine-tuned generator with semantic similarity scoring
+- Merged **Word2Vec** and **FastText** vectors to build a richer semantic neighborhood
+- Trained a shallow transformer head to **generate synonyms** ranked by semantic weight and register
+- Designed the UI to be playful — great for essay writers, content creators, or curious learners
 
-    The goal was **creative utility** — helping users write better essays, stories, or social media posts.
-    """)
-    st.caption("Tags: #NLP #Embeddings #WordPlay #Education")
+This one pushed me to think beyond tech: about language, nuance, and user delight.
+""")
+    st.caption("Tags: #NLP #Embeddings #WordPlay #SemanticSearch")
 
 # GAN Sorting Visualizer
 with st.expander("🎨 Sorting Visualizer with GANs"):
     st.markdown("""
-    What if sorting algorithms looked more like **animated shape transformations**?
+An artistic project where I re-imagined how we teach **sorting algorithms** — not with bars, but with **morphing geometric shapes**.
 
-    - I used a **StyleGAN-inspired setup** to create smooth transitions between 2D shapes representing array states during sorting (bubble, quick, merge, etc.)
-    - The visuals morph between states based on algorithmic steps
+- Used **StyleGAN-inspired generator** to animate state transitions in arrays
+- Encoded bubble sort, merge sort, and quick sort into morphing flows
+- Created a small GUI where students could visualize sort evolution in a *fluid*, *visual* way
 
-    It was a crazy blend of **generative models** + **algorithmic education**, and I loved every bit of it. One of the most *fun* projects I’ve built.
-    """)
+Purely for fun and curiosity, but got great feedback from peers learning algorithms.
+""")
     st.caption("Tags: #GAN #CreativeAI #Visualization #Algorithms")
 
 st.markdown("---")
-st.info("Each of these taught me more than just code — they taught me how to design, debug, communicate, and keep building. Want to collaborate on something similar? Let’s talk.")
+st.info("Each of these taught me more than just code — they taught me how to design, debug, communicate, and keep building. Want to know more about these, check out my github or Linkedln Profile")
