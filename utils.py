@@ -60,24 +60,19 @@ Skills:
 - Python, TensorFlow, PyTorch, OpenCV, Streamlit, YOLOv8, HuggingFace Transformers, MediaPipe, LLM prompt engineering, NLP pipelines
 
 Respond as Khushal’s AI assistant using only the context above.
-    """
+"""
 
     prompt = f"{context.strip()}\n\nUser: {query}\nKhushal’s AI Assistant:"
 
-    API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-xl"
+    API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
     headers = {
         "Authorization": f"Bearer {st.secrets['huggingface']['HF_TOKEN']}"
     }
 
     payload = {
         "inputs": prompt,
-        "parameters": {
-            "max_length": 300,
-            "do_sample": False
-        },
-        "options": {
-            "wait_for_model": True
-        }
+        "parameters": {"max_length": 200, "do_sample": False},
+        "options": {"wait_for_model": True}
     }
 
     try:
@@ -85,10 +80,10 @@ Respond as Khushal’s AI assistant using only the context above.
         result = response.json()
 
         if isinstance(result, list) and "generated_text" in result[0]:
-            return result[0]["generated_text"].replace(prompt, "").strip()
+            return result[0]["generated_text"]
         elif "error" in result:
             return f"⚠️ Model error: {result['error']}"
         else:
-            return f"⚠️ Unexpected model response: {result}"
+            return f"⚠️ Unexpected response: {result}"
     except Exception as e:
         return f"❌ Error: {e}"
