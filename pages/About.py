@@ -7,7 +7,7 @@ st.set_page_config(page_title="About | Khushal Jhaveri", layout="wide")
 col1, col2 = st.columns([1, 3])
 with col1:
     image = Image.open("assets/profile-pic (3).png")
-    st.image(image, caption="Khushal Jhaveri", width=180, use_column_width=False)
+    st.image(image, caption="Khushal Jhaveri", width=180, use_container_width=False)
 
 with col2:
     st.title("👋 About Me")
