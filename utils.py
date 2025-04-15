@@ -2,13 +2,10 @@ import requests
 import streamlit as st
 
 def generate_response(query):
-    with open("khushal_ai_assistant_context.txt", "r") as f:
-        context = f.read()
-
+    context = st.secrets["context"]["khushal"]
     prompt = f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:"
 
     API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-xl"
-
     headers = {
         "Authorization": f"Bearer {st.secrets['huggingface']['HF_TOKEN']}"
     }
@@ -21,9 +18,6 @@ def generate_response(query):
 
     try:
         response = requests.post(API_URL, headers=headers, json=payload)
-        print("Status Code:", response.status_code)
-        print("Raw Response Text:", response.text)
-
         result = response.json()
 
         if isinstance(result, list) and len(result) > 0 and "generated_text" in result[0]:
