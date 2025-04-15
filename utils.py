@@ -53,11 +53,11 @@ Skills:
 - Python, TensorFlow, PyTorch, OpenCV, Streamlit, YOLOv8, HuggingFace Transformers, MediaPipe, LLM prompt engineering, NLP pipelines
 
 Respond to user questions using only the context above.
-"""
+    """
 
     prompt = f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:"
 
-    API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-xl"
+    API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
     headers = {
         "Authorization": f"Bearer {st.secrets['huggingface']['HF_TOKEN']}"
     }
@@ -70,13 +70,10 @@ Respond to user questions using only the context above.
 
     try:
         response = requests.post(API_URL, headers=headers, json=payload)
-        result = response.json()
+        print("Status Code:", response.status_code)
+        print("Raw Response:", response.text)
 
-        if isinstance(result, list) and "generated_text" in result[0]:
-            return result[0]["generated_text"]
-        elif isinstance(result, dict) and "error" in result:
-            return f"Model error: {result['error']}"
-        else:
-            return f"Unexpected model response: {result}"
+        result = response.json()
+        return result[0]["generated_text"]
     except Exception as e:
-        return f"Error: {e}"
+        return f"Error: {e} or model may be warming up."
