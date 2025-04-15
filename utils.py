@@ -1,29 +1,28 @@
-import requests
-import streamlit as st
 import google.generativeai as genai
+import streamlit as st
 
+# Load the Gemini API key from Streamlit secrets
 genai.configure(api_key=st.secrets["gemini"]["API_KEY"])
 
+# You can change this to any other valid model you listed earlier
+MODEL_NAME = "gemini-1.5-pro"
+
 def generate_response(query):
-    
-    context = """
-    Khushal Jhaveri is a Master’s student in Computer Science at USC, specializing in AI. He's worked on real-world projects combining AI, vision, and language. Key work includes:
-    
-    - Drone vision system at ResoluteAI using YOLOv8 and Streamlit dashboards
-    - Readability improvement of scanned textbooks for rural outreach using OpenCV
-    - Led marketing and fundraising for BloomBox, a student startup incubator
-    - Built a multimodal emotion detection model (MediaPipe + Librosa + NLP on MELD)
-    - Created medical ultrasound classifiers for gallbladder stone detection
-    - Developed LSTM-based Amazon review sentiment analysis
-    - Engineered a YouTube summarizer using OpenAI GPT + chunking
-    - Created a GAN-based sorting visualizer and vocabulary generator
-    
-    Skills: Python, PyTorch, TensorFlow, OpenCV, Streamlit, YOLOv8, Hugging Face, prompt engineering.
-    """
-    model = genai.GenerativeModel("gemini-pro")
     try:
-        response = model.generate_content(query)
+        # Use Gemini model
+        model = genai.GenerativeModel(MODEL_NAME)
+
+        # If you're using context, load it from file
+        with open("khushal_ai_assistant_context.txt", "r", encoding="utf-8") as f:
+            context = f.read()
+
+        # Combine with query
+        prompt = f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:"
+
+        # Generate response
+        response = model.generate_content(prompt)
+
         return response.text
+
     except Exception as e:
         return f"❌ Error: {e}"
-
