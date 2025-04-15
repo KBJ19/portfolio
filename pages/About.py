@@ -1,55 +1,57 @@
 import streamlit as st
+from PIL import Image
 
-st.title("👋 About Me")
+st.set_page_config(page_title="About | Khushal Jhaveri", layout="wide")
 
-st.write("""
+# Load profile image
+col1, col2 = st.columns([1, 3])
+with col1:
+    image = Image.open("assets/profile-pic (3).png")
+    st.image(image, caption="Khushal Jhaveri", width=180, use_column_width=False)
+
+with col2:
+    st.title("👋 About Me")
+
+    st.markdown("""
 Hi, I'm **Khushal Jhaveri** — currently pursuing my Master’s in Computer Science with a focus on Artificial Intelligence at the **University of Southern California (USC)**.
 
 I like building systems that sit at the intersection of **AI, vision, and language** — things that make machines understand humans a little better, and maybe even help out in the real world.
 
-Over the past few years, I’ve worked on everything from **multimodal emotion recognition** using video, audio, and text, to building **drone vision systems** for agriculture, to improving **textbook readability for underprivileged girls** with nothing but OpenCV and a purpose.
+Over the past few years, I’ve worked on everything from **multimodal emotion recognition**, to **drone vision systems**, to **textbook readability tools** for underserved communities — always aiming for impact over just accuracy.
 
-Before USC, I completed my B.Tech in Computer Engineering from **K.J. Somaiya College of Engineering**, Mumbai, with an Honors in Cybersecurity. I was also the **Marketing Head of BloomBox**, our entrepreneurship cell, where I led large-scale events, fundraising, and community engagement — including organizing a 1000+ attendee event with Ashneer Grover as keynote speaker.
+Before USC, I studied at **K.J. Somaiya College in Mumbai**, led as **Marketing Head at BloomBox**, and worked on cybersecurity honors coursework.
 
-Professionally, I’ve interned as a **Deep Learning Engineer at ResoluteAI**, leading proof-of-concept projects involving drone imaging, YOLOv8 models, and traditional CV pipelines. I also worked at **Suvidha Foundation**, enhancing educational material scans for underprivileged communities using OpenCV and morphological operations.
+I’ve interned as a **Deep Learning Engineer at ResoluteAI** and as a **Machine Learning Intern at Suvidha Foundation**, applying computer vision where it actually helps people.
 
 ---
 
 ### 💬 Outside the Resume
 
-I’m not just about code and models — I thrive in chaos too.
-
-I’ve hosted events, built sponsorship decks, run logistics for national startup summits, and volunteered as a speaker coordinator. These experiences shaped how I think about leadership, storytelling, and problem-solving.
-
-I’m an **extrovert**, but one who **dives deep** — into architecture design, business decks, or old-school martial arts katas. I learn best when I explore things thoroughly, and I ask a lot of “why’s” along the way.
+I’m an extrovert who loves chaos and deep dives — from hosting 1000+ attendee startup events to debugging code at 3am. I think tech is at its best when it connects people, solves things quietly, and makes someone's day better.
 
 ---
 
-### 🌱 Things I'm Exploring
+### ☕ Interests Outside Tech
 
-- Using AI for **education and accessibility**
-- Building **low-cost healthcare tools** via computer vision
-- LLMs for **summarization, creativity, and context-aware assistants**
-- Cloud systems that scale smart — I’m also **Azure certified**
-
----
-
-### ☕ Things I Love Outside Tech
-
-- 🍜 **Food** — Big-time foodie. I love discovering new places, trying new cuisines, and cooking wildly experimental things at home.
-- 📸 **Photography** — Mostly candid, street, and the occasional perfectly timed sunset or cloud obsession.
-- 🚴‍♂️ **Cycling** — Long night rides are my version of therapy and brainstorming.
-- 🥋 **Martial Arts** — Trained, practiced, and still humbled by it.
-- 🚗 **Cars** — Both under the hood and on the track. If it moves, I’m curious.
+- 🍜 **Foodie** — From street snacks to slow cooking, always exploring flavor.
+- 📸 **Photography** — Candid moments, cityscapes, and clouds.
+- 🚴‍♂️ **Cycling** — Long rides = deep thinking time.
+- 🥋 **Martial Arts** — Focus, movement, clarity.
+- 🚗 **Cars** — All things that move, roar, or roll.
 
 ---
 
-### 🧠 My Current Mindset
+### 🧠 What Drives Me
 
-I’m not chasing the fanciest solution — I want the **right** one. Whether that’s GANs or just clever thresholding in OpenCV, I enjoy going deep, failing fast, iterating, and making something that actually works.
+I don’t chase the fanciest model — I look for the **right one**. I love building fast, failing smart, and creating things that work in the wild. If I can share that with others through mentoring, open source, or just vibing over shared ideas — all the better.
 
-And if I can help someone else along the way — whether it’s through mentoring, collaboration, or just sharing what I’ve learned — I’m all in for it.
+Thanks for stopping by. Feel free to connect!
+""")
 
-Thanks for dropping by :)  
-If any of that resonates — feel free to explore the other pages or reach out!
+# --- Social Links ---
+st.markdown("### 📬 Let's Connect")
+st.markdown("""
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](http://www.linkedin.com/in/khushaljhaveri)
+[![GitHub](https://img.shields.io/badge/GitHub-Explore-black?logo=github)](https://github.com/KBJ19)
+[![Email](https://img.shields.io/badge/Email-Write-informational?logo=gmail)](mailto:khushalbjhaveri@gmail.com)
 """)
