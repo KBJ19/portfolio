@@ -4,11 +4,11 @@ from utils import generate_response  # using HuggingFace-powered response
 st.set_page_config(page_title="Khushal Jhaveri | Portfolio", layout="wide")
 
 st.sidebar.title("📁 Navigation")
-st.sidebar.page_link("About", label="About Me")
-st.sidebar.page_link("Experience", label="Experience")
-st.sidebar.page_link("Projects", label="Projects")
-st.sidebar.page_link("Blog", label="Blog")
-st.sidebar.page_link("Contact", label="Contact")
+st.sidebar.page_link("pages/About.py", label="About Me")
+st.sidebar.page_link("pages/Experience.py", label="Experience")
+st.sidebar.page_link("pages/Projects.py", label="Projects")
+st.sidebar.page_link("pages/Blog.py", label="Blog")
+st.sidebar.page_link("pages/Contact.py", label="Contact")
 
 st.title("🤖 Chat with Khushal")
 
