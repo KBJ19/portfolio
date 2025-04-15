@@ -59,7 +59,7 @@ Respond to user questions using only the context above.
 
     API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-xl"
     headers = {
-        "Authorization": f"Bearer {st.secrets['HF_TOKEN']}"
+        "Authorization": f"Bearer {st.secrets['huggingface']['HF_TOKEN']}"
     }
 
     payload = {
