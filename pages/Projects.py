@@ -1,7 +1,4 @@
 import streamlit as st
-
-st.set_page_config(page_title="Projects | Khushal Jhaveri", layout="wide")
-
 st.title("🛠 Projects")
 st.write("""
 Here's a curated collection of my most meaningful projects — where I combined AI, vision, and language to build tools that work in the real world. Some are academic, others from internships or hackathons — but all of them taught me something valuable.
