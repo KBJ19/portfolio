@@ -7,7 +7,8 @@ def generate_response(query):
 
     prompt = f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:"
 
-    API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
+    API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-xl"
+
     headers = {
         "Authorization": f"Bearer {st.secrets['huggingface']['HF_TOKEN']}"
     }
