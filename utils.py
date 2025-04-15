@@ -2,11 +2,8 @@ import requests
 import streamlit as st
 
 def generate_response(query):
-    try:
-        with open("khushal_ai_assistant_context.txt", "r") as f:
-            context = f.read()
-    except FileNotFoundError:
-        return "Error: Context file not found. Please make sure khushal_ai_assistant_context.txt exists."
+    with open("khushal_ai_assistant_context.txt", "r") as f:
+        context = f.read()
 
     prompt = f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:"
 
@@ -23,10 +20,14 @@ def generate_response(query):
 
     try:
         response = requests.post(API_URL, headers=headers, json=payload)
-        if response.status_code != 200:
-            return f"Error {response.status_code}: {response.text}"
+        print("Status Code:", response.status_code)
+        print("Raw Response Text:", response.text)
 
         result = response.json()
-        return result[0]["generated_text"]
+
+        if isinstance(result, list) and len(result) > 0 and "generated_text" in result[0]:
+            return result[0]["generated_text"]
+        else:
+            return f"⚠️ Unexpected response format: {result}"
     except Exception as e:
-        return f"Error: {e} or model may be warming up."
+        return f"❌ Error: {e} — or model may be warming up."
