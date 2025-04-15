@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 import google.generativeai as genai
 
-genai.configure(api_key=st.secrets["gemini_api_key"])
+genai.configure(api_key=st.secrets["gemini"]["API_KEY"])
 
 def generate_response(query):
     
@@ -20,9 +20,9 @@ def generate_response(query):
     
     Skills: Python, PyTorch, TensorFlow, OpenCV, Streamlit, YOLOv8, Hugging Face, prompt engineering.
     """
-    model = genai.GenerativeModel("gemini-pro")
+    model = genai.GenerativeModel("models/gemini-pro")
     try:
-        response = model.generate_content(f"{context}\n\nUser: {query}\nKhushal’s AI Assistant:")
+        response = model.generate_content(query)
         return response.text
     except Exception as e:
         return f"❌ Error: {e}"
