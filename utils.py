@@ -20,7 +20,7 @@ def generate_response(query):
     
     Skills: Python, PyTorch, TensorFlow, OpenCV, Streamlit, YOLOv8, Hugging Face, prompt engineering.
     """
-    model = genai.GenerativeModel("models/gemini-pro")
+    model = genai.GenerativeModel("gemini-pro")
     try:
         response = model.generate_content(query)
         return response.text
