@@ -10,85 +10,73 @@ Here’s a curated showcase of the projects I’ve built — where AI, vision, a
 # Multimodal Emotion Recognition
 with st.expander("🧠 Multimodal Emotion Recognition"):
     st.markdown("""
-One of my most fulfilling projects — building a system that can understand **how people feel** by analyzing not just what they say, but *how* they say it and *how* they look while saying it.
+This project came out of my curiosity about how machines can understand not just *what* people are saying, but also *how* they’re saying it — essentially, getting machines to pick up on emotion like humans do.
 
-Using the **MELD** dataset (multi-modal emotion dialogues from *Friends*), I extracted:
-- **Facial features** using **MediaPipe** for landmark extraction and downsampled **ResNet** for visual embeddings
-- **Audio tone** using **Librosa** features like chroma, MFCCs, zero-crossing rate, and spectral contrast
-- **Transcript embeddings** using both **TF-IDF** and pre-trained **Word2Vec**
+Using the **MELD dataset**, I built a multimodal emotion classifier that fuses three streams:
+- **Visual input**: I used **MediaPipe** to extract facial landmarks from each video frame and passed them through a ResNet-based encoder to capture micro-expressions.
+- **Audio features**: With **Librosa**, I extracted MFCCs, zero-crossing rates, and pitch contours to detect tone shifts and emotional vocal patterns.
+- **Textual content**: Processed transcripts using **TF-IDF** and **Word2Vec** embeddings to encode semantic meaning.
 
-I aligned these three modalities at the utterance level, fused them using **early fusion**, and trained a **bi-directional LSTM** to classify emotions. This also included dropout regularization, gradient clipping, and class-balancing to handle underrepresented emotions.
+These streams were aligned frame-by-frame and fused using early fusion before passing them into a **bi-directional LSTM**, which captured temporal dependencies across the modalities. The final classification yielded ~74% accuracy, outperforming unimodal baselines significantly.
 
-Achieved ~74% test accuracy across 7 emotion classes. More than the accuracy, this project taught me the nuances of **temporal alignment**, **feature fusion**, and how to design models that feel more *emotionally aware*.
+This wasn’t just a deep learning experiment — it was about bridging the gap between cold code and human feeling. It made me appreciate the nuances in multimodal fusion and the art of aligning signals that speak different languages.
 """)
-    st.caption("Tags: #DeepLearning #Multimodal #LSTM #NLP #ComputerVision")
+    st.caption("Tags: #MultimodalAI #EmotionRecognition #LSTM #MELD #MediaPipe #ResNet #AudioTextVision")
 
 # Gallbladder Stone Detection
 with st.expander("📟 Gallbladder Stone Detection (Ultrasound)"):
     st.markdown("""
-Built a lightweight CNN classifier for **diagnosing gallbladder stones** from noisy, low-resolution ultrasound images — aimed at **rural medical settings** where specialists are scarce.
+This project focused on improving the accuracy and accessibility of gallbladder stone detection using deep learning. Traditional ultrasound scans can be noisy, and diagnosis often varies by clinician. So I built a system that leverages **VGG16**, **ResNet50**, and **MobileNetV2** with **second-order pooling** to identify stones with better feature learning.
 
-- Used **OpenCV** to enhance scan clarity via histogram equalization, bilateral filtering, and contour thresholding
-- Trained a custom **TensorFlow CNN** architecture to work on edge devices
-- Implemented **Grad-CAM** visualizations to highlight detected regions for interpretability
+I used **region proposal networks (RPNs)** to localize the gallbladder and extracted ROIs. Preprocessing steps involved **CLAHE** contrast enhancement, contour filtering, and OpenCV pipelines to refine image input.
 
-This was my first attempt at responsible AI for healthcare — balancing performance with accessibility.
+The model improved classification accuracy by 30% compared to standard ultrasound diagnostics and serves as a **cost-effective alternative to MRI or CT scans**, especially in resource-constrained settings.
+
+Looking ahead, this system could be validated clinically and integrated into hospital diagnostic workflows.
 """)
-    st.caption("Tags: #MedicalImaging #TensorFlow #CNN #OpenCV")
+    st.caption("Tags: #MedicalAI #Ultrasound #CNN #RPN #CostEffectiveHealthcare")
 
 # YouTube Transcript Summarizer
 with st.expander("📽️ YouTube Transcript Summarizer"):
     st.markdown("""
-A tool to help you get the **key takeaways from long videos**, fast.
+We’ve all scrubbed through 45-minute videos just to find the one minute we care about. So I built a tool to skip the hunt.
 
-- Extracted subtitles using `youtube-transcript-api`
-- Cleaned and chunked them semantically using sliding window + cosine similarity
-- Fed chunks to **OpenAI's GPT API** with tailored summarization prompts
-- Integrated into a **Streamlit frontend** for real-time use
+The app pulls transcripts using `youtube-transcript-api`, breaks them into meaningful chunks based on semantic similarity, and feeds them into **OpenAI’s GPT models** with prompt engineering for summarization. Each chunk returns a short, clear summary that captures the essence of that segment.
 
-This project taught me prompt engineering, semantic coherence, and usability design — and I still use it myself.
+I wrapped the whole thing in a clean **Streamlit frontend** for easy access. This was my first time integrating LLMs in a structured pipeline and reinforced how crucial **prompt design and chunking** are when working with transformer-based models.
+
+It’s the tool I now use to study — which is the best kind of feedback loop.
 """)
-    st.caption("Tags: #LLM #Summarization #PromptEngineering #Streamlit")
+    st.caption("Tags: #LLM #Summarization #OpenAI #Streamlit #NLP")
 
-# Amazon Sentiment Classifier
+# Amazon Review Sentiment Classifier
 with st.expander("🛒 Amazon Review Sentiment Classifier"):
     st.markdown("""
-Built a full NLP pipeline to classify Amazon reviews into **positive**, **neutral**, or **negative** using:
+This project involved performing **binary and ternary sentiment classification** on Amazon Office Product reviews using a combination of classic ML and deep learning approaches.
 
-- **Text cleaning**: punctuation stripping, lemmatization, lowercasing
-- **Embedding layer** using pre-trained **GloVe vectors**
-- **LSTM with attention layer** for long-term dependencies
-- Trained using weighted cross-entropy loss to handle class imbalance
+First, I carried out extensive **text cleaning** — lowercasing, lemmatization, stopword removal, HTML stripping, and punctuation filtering. I used both **pre-trained Word2Vec embeddings** and trained a **custom Word2Vec model** to encode semantic information more contextually.
 
-This gave me hands-on practice with sequence modeling, custom attention blocks, and evaluation beyond accuracy (precision, F1).
+For modeling, I compared:
+- **Binary classifiers**: SVM, Perceptron, and MLP
+- **Ternary classifiers**: MLP with 300D embeddings and reduced 10D dimensions
+
+Findings showed that custom Word2Vec outperformed in certain domain-specific contexts, while reducing embedding dimensionality negatively impacted accuracy. My best-performing model was a **Ternary MLP with custom Word2Vec (300D)**, achieving strong classification across all sentiment classes.
+
+Beyond just predicting sentiment, this taught me how subtle the tone of reviews can be — and how different models pick up on those cues differently.
 """)
-    st.caption("Tags: #SentimentAnalysis #LSTM #Attention #NLP")
-
-# Vocabulary Generator
-with st.expander("🧾 Vocabulary Generator"):
-    st.markdown("""
-A creative NLP project that helps users find **high-impact vocabulary** starting from a seed word.
-
-- Merged **Word2Vec** and **FastText** vectors to build a richer semantic neighborhood
-- Trained a shallow transformer head to **generate synonyms** ranked by semantic weight and register
-- Designed the UI to be playful — great for essay writers, content creators, or curious learners
-
-This one pushed me to think beyond tech: about language, nuance, and user delight.
-""")
-    st.caption("Tags: #NLP #Embeddings #WordPlay #SemanticSearch")
+    st.caption("Tags: #SentimentAnalysis #Word2Vec #TernaryClassification #MLP #NLP")
 
 # GAN Sorting Visualizer
 with st.expander("🎨 Sorting Visualizer with GANs"):
     st.markdown("""
-An artistic project where I re-imagined how we teach **sorting algorithms** — not with bars, but with **morphing geometric shapes**.
+Sorting is often taught with static visuals or bar animations. I wanted to push this into something more dynamic and immersive — so I combined **Vision Transformers** and **Conditional GANs** to create a sorting visualizer that felt alive.
 
-- Used **StyleGAN-inspired generator** to animate state transitions in arrays
-- Encoded bubble sort, merge sort, and quick sort into morphing flows
-- Created a small GUI where students could visualize sort evolution in a *fluid*, *visual* way
+I generated a dataset of 1000+ images across multiple algorithms (QuickSort, MergeSort, BubbleSort), then trained models to animate their operations visually. **Vision Transformers** helped encode temporal coherence, while **cGANs** ensured fidelity and variation in animation.
 
-Purely for fun and curiosity, but got great feedback from peers learning algorithms.
+The result was a 40% improvement in interpretability over standard bar-chart animations — and a tool that not only teaches sorting but also shows what each step *feels* like.
 """)
-    st.caption("Tags: #GAN #CreativeAI #Visualization #Algorithms")
+    st.caption("Tags: #GAN #VisionTransformers #SortingVisualization #EducationalAI")
 
 st.markdown("---")
+
 st.info("Each of these taught me more than just code — they taught me how to design, debug, communicate, and keep building. Want to know more about these, check out my github or Linkedln Profile")
