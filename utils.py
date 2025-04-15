@@ -28,50 +28,54 @@ Internships:
 Projects:
 
 1. Multimodal Emotion Recognition:
-- Designed a system that combines facial expressions (video via MediaPipe + ResNet), tone (Librosa on audio), and transcripts (TF-IDF, Word2Vec on text) to classify human emotions.
-- Dataset used: MELD.
-- Achieved ~74% accuracy using early fusion of features and LSTM classifier.
+- Combined facial expressions (via MediaPipe + ResNet), tone (Librosa on audio), and transcripts (TF-IDF, Word2Vec on text) to classify emotions.
+- Dataset used: MELD. Achieved ~74% accuracy using early fusion of features and LSTM.
 
 2. Gallbladder Stone Detection using Ultrasound:
-- Built a CNN-based classifier to detect presence of stones in low-resolution, noisy ultrasound images.
-- Tools used: TensorFlow, OpenCV, Keras.
-- Focused on preprocessing for contrast enhancement and edge detection.
+- Built a CNN-based classifier for noisy ultrasound images using TensorFlow and OpenCV.
 - Designed for deployment in low-resource medical settings.
 
 3. YouTube Transcript Summarizer:
-- Created an LLM-powered tool that extracts video transcripts and generates context-aware summaries using OpenAI API.
-- Integrated streamlit UI and included semantic chunking + chain-of-thought prompts.
+- Used OpenAI GPT and prompt engineering to summarize YouTube transcripts.
+- Integrated with Streamlit and semantic chunking.
 
 4. Amazon Product Review Sentiment Classifier:
-- Built an LSTM model to classify reviews into sentiment categories using glove embeddings and attention layers.
-- Implemented preprocessing: tokenization, stopword removal, lemmatization.
-- Dataset: public Amazon reviews.
+- Used LSTM + attention layers on public Amazon reviews.
+- Applied stopword removal, tokenization, and glove embeddings.
 
 5. Vocabulary Generator:
-- Given a keyword or concept, the app generates a list of related advanced vocabulary using word embeddings + a finetuned text generator.
-- Goal: aid competitive exam takers or writers.
+- Generates related advanced vocabulary using embedding lookups + a fine-tuned generator model.
 
-6. Sorting Algorithm Visualizer with GANs:
-- Visualizes sorting algorithms using 2D shape transformations.
-- Uses StyleGAN to generate shapes and overlays sorting steps dynamically.
-- Adds an educational visual layer to classic algorithm understanding.
+6. Sorting Visualizer with GANs:
+- StyleGAN-based visualization of sorting algorithms over 2D shape transformations.
 
 Skills:
 - Python, TensorFlow, PyTorch, OpenCV, Streamlit, YOLOv8, HuggingFace Transformers, MediaPipe, LLM prompt engineering, NLP pipelines
-
-Respond as Khushal’s AI assistant using only the context above.
 """
 
-    prompt = f"{context.strip()}\n\nUser: {query}\nKhushal’s AI Assistant:"
+    prompt = f"""Below is background information about Khushal Jhaveri. Use this information only to answer the user's question.
 
-    API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
+### CONTEXT:
+{context.strip()}
+
+### QUESTION:
+{query}
+
+### ANSWER:
+"""
+
+    API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct"
     headers = {
         "Authorization": f"Bearer {st.secrets['huggingface']['HF_TOKEN']}"
     }
 
     payload = {
         "inputs": prompt,
-        "parameters": {"max_length": 200, "do_sample": False},
+        "parameters": {
+            "max_new_tokens": 400,
+            "temperature": 0.7,
+            "do_sample": False
+        },
         "options": {"wait_for_model": True}
     }
 
@@ -80,10 +84,10 @@ Respond as Khushal’s AI assistant using only the context above.
         result = response.json()
 
         if isinstance(result, list) and "generated_text" in result[0]:
-            return result[0]["generated_text"]
+            return result[0]["generated_text"].strip()
         elif "error" in result:
             return f"⚠️ Model error: {result['error']}"
         else:
-            return f"⚠️ Unexpected response: {result}"
+            return f"⚠️ Unexpected model response: {result}"
     except Exception as e:
         return f"❌ Error: {e}"
