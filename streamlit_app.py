@@ -8,7 +8,7 @@ st.markdown("""
     <style>
     .popup-hint {
         position: fixed;
-        top: 70px;
+        top: 40px;
         left: 20px;
         background-color: #111827;
         color: #fff;
@@ -17,7 +17,7 @@ st.markdown("""
         font-size: 14px;
         z-index: 999;
         box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-        animation: blink 1.5s infinite;
+        animation: blink 1.5s 10s;
     }
 
     @keyframes blink {
