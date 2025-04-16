@@ -36,6 +36,24 @@ Looking ahead, this system could be validated clinically and integrated into hos
 """)
     st.caption("Tags: #MedicalAI #Ultrasound #CNN #RPN #CostEffectiveHealthcare")
 
+# Sign Language
+with st.expander("🧤 Sign Language to Text — Real-Time Gesture Recognition with MediaPipe and LSTMs"):
+    st.markdown("""
+
+One of my most rewarding explorations into AI for accessibility. I built a real-time system that converts sign language gestures into text using a webcam feed.
+
+Used MediaPipe Hands to extract precise 21-point hand landmarks for each frame
+
+Trained a sequence classifier using bi-directional LSTMs to understand temporal gesture patterns
+
+Built a responsive Streamlit interface to show live predictions and gesture smoothing
+
+What started as a class project became something that made me realize how powerful small models + good preprocessing can be for real-world interaction.
+
+🔧 Tools used: Python, MediaPipe, TensorFlow, Streamlit
+""")
+    st.caption("Tags: #SignLanguage #GestureRecognition #Accessibility #LSTM #MediaPipe")
+
 # YouTube Transcript Summarizer
 with st.expander("📽️ YouTube Transcript Summarizer"):
     st.markdown("""
