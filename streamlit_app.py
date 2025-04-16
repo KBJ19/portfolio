@@ -28,7 +28,7 @@ st.markdown("""
     </style>
 
     <div class="popup-hint">
-        🔝 Click arrow to explore more about me!
+        👆 Click arrow to explore more about me!
     </div>
 """, unsafe_allow_html=True)
 
