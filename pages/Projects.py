@@ -37,7 +37,7 @@ Looking ahead, this system could be validated clinically and integrated into hos
     st.caption("Tags: #MedicalAI #Ultrasound #CNN #RPN #CostEffectiveHealthcare")
 
 # Sign Language
-with st.expander("🧤 Sign Language to Text — Real-Time Gesture Recognition with MediaPipe and LSTMs"):
+with st.expander("🧤 Sign Language to Text with MediaPipe and LSTMs"):
     st.markdown("""
 
 One of my most rewarding explorations into AI for accessibility. I built a real-time system that converts sign language gestures into text using a webcam feed.
