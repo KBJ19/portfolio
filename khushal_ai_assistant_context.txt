@@ -1,11 +1,37 @@
 --- KHUSHAL JHAVERI PORTFOLIO CONTEXT FILE ---
 
-[🔹 RESUME HIGHLIGHTS]
+👋 About Me
+Hi, I'm Khushal Jhaveri — currently pursuing my Master’s in Computer Science with a focus on Artificial Intelligence at the University of Southern California (USC). I like building things that blend AI, vision, and language, especially when they can be applied to the real world in messy, human ways.
 
-[🔹 DETAILED PROJECTS, EXPERIENCE, BLOG SUMMARIES]
+Over the past few years, I've been lucky to work on projects that go beyond just accuracy scores. Whether it was building a multimodal emotion detector using facial cues, audio, and text — or developing computer vision tools to improve blurry textbook scans for rural education — the goal has always been to make AI feel a little more useful, a little more human.
 
+Before USC, I completed my B.Tech in Computer Engineering from K.J. Somaiya College in Mumbai, with an Honors in Cybersecurity. I was also the Marketing Head of BloomBox, our entrepreneurship cell, where I led large-scale events and funding efforts — which, by the way, taught me more about leadership than any classroom ever could.
 
-Khushal Brijen Jhaveri
+I’ve worked as a Deep Learning Engineer Intern at ResoluteAI, leading proof-of-concept projects for clients involving drone imaging, YOLOv8 models, and traditional computer vision — sometimes ditching deep learning altogether when CV worked better. I’ve also interned at Suvidha Foundation, using OpenCV to enhance scanned educational material for underprivileged girls.
+
+Outside of tech, I’ve worn many hats — fundraiser, speaker coordinator, pitch deck builder, and event host. I believe all of that shapes how I think about problem-solving today.
+
+🌱 Things I'm exploring
+Using AI for education and accessibility
+Low-cost healthcare tools via computer vision
+LLMs for summarization, creativity, and context-aware dialogue
+Cloud systems that scale smartly — I’m Azure certified too
+💬 Outside the Resume
+I’m not just about code and models — I love putting myself out there.
+
+I’ve hosted events, built sponsorship decks, run logistics for 1000+ people, and helped organize national startup summits. I enjoy learning how people think, what makes them tick, and how good design and tech can be a bridge between people and systems.
+
+I’m an extrovert, but also someone who likes going deep — whether it’s a model architecture, a business deck, or an old-school martial arts kata. I learn best when I understand things thoroughly, and I ask a lot of “why’s” along the way.
+
+☕ Interests Outside Tech
+🍜 Food — big-time foodie, always up to explore new places or cook something wildly experimental.
+📸 Photography — mostly candid, street, and the occasional cloud obsession.
+🚴‍♂️ Cycling — long night rides are my version of therapy.
+🥋 Martial Arts — trained in it, practiced it, loved it.
+🚗 Cars — both on road and under the hood. If it moves, I’m curious.
+🧠 My current mindset
+I’m not chasing the fanciest solution — I want the right one. Whether that’s GANs or just clever thresholding in OpenCV, I enjoy going deep, failing a bit, iterating, and making something that works.
+
 🔹 AI & Machine Learning Engineer | Deep Learning | NLP | Cloud Computing | Data Science
 🔹 Master’s in Computer Science (Artificial Intelligence), USC
 
@@ -14,41 +40,6 @@ I am a highly skilled AI & Machine Learning Engineer with expertise in deep lear
 I have worked on AI-driven projects across sentiment analysis, medical imaging, YouTube transcript summarization, and sign language recognition, leveraging deep learning (TensorFlow, PyTorch), NLP (Word2Vec, LLMs), and machine learning algorithms (Scikit-learn, SVMs, Perceptron, MLPs).
 I bring internship experience at ResoluteAI and Suvidha Foundation, where I developed AI solutions to automate processes, optimize deep learning models, and enhance real-world AI applications.
 
-🔹 Professional Experience
-Deep Learning Engineer Intern | ResoluteAI (June 2023 – April 2024)
-Technologies Used: YOLOv8, OpenCV, TensorFlow, PyTorch, Scikit-learn, Streamlit
-Key Contributions: 
-Built an AI-based nested pipe detection system, improving efficiency by 40%.
-Designed a YOLOv8-based sapling counting model with 95% accuracy.
-Developed pipe defect classification using image processing (thresholding, dilation), reducing manual labor by 3 hours.
-Built a Streamlit web app for interactive AI-based drone analysis.
-Led and mentored 3 junior team members on AI model development.
-Defect detection on shafts 
-Bag counting 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Machine Learning Intern | Suvidha Foundation (June 2023 – July 2023)
-Technologies Used: OpenCV, Scikit-learn, Python
-Key Contributions: 
-Implemented a text extraction model using erosion, dilation, and thresholding, ensuring 100% readable text.
-Led a fundraising initiative supporting 100+ underprivileged girls.
 
 🔹 AI & Machine Learning Projects
 1. Sentiment Analysis on Amazon Product Reviews
@@ -65,110 +56,7 @@ Custom Word2Vec outperformed pre-trained embeddings in some cases.
 Reducing word embeddings (300D → 10D) significantly reduced accuracy.
 Best Model: Ternary MLP with custom 300D Word2Vec embeddings.
 
-7. Advanced NLP Projects: Sentiment Analysis and Summarization
-Technologies Used: Python, Scikit-learn, PyTorch, Word2Vec, TF-IDF, Streamlit, Google Gemini LLM
-Project Scope:
-Worked on sentiment classification for Amazon product reviews using both binary and ternary labels. Implemented preprocessing steps like HTML cleaning, contraction expansion, stopword removal, and lemmatization. Built TF-IDF vectors and trained classifiers such as SVM, Perceptron, and MLP. Also explored embedding-based models using custom and pre-trained Word2Vec vectors, observing that custom embeddings often outperformed in domain-specific tasks.
-
-
-2. YouTube Transcript Summarizer (LLM & Generative AI)
-Technologies Used: Python, Streamlit, YouTube Transcript API, Google Gemini AI, dotenv
-Project Scope: 
-Extracts YouTube transcripts and generates concise summaries using Google Gemini AI.
-Built a Streamlit web interface for easy user interaction.
-Future Enhancements: Multi-language support, sentiment analysis, keyword extraction.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3. Gallbladder Stone Detection using Deep Learning
-Technologies Used: Python, TensorFlow/PyTorch, CNNs (VGG16, ResNet50, MobileNetV2), Scikit-learn
-Project Scope: 
-Medical imaging-based AI solution for detecting gallbladder stones from ultrasound images.
-Used region proposal networks (RPN) for ROI extraction.
-Implemented second-order pooling architecture for enhanced classification.
-Improved detection accuracy by 30%, making it a cost-effective alternative to MRI & CT scans.
-Future Enhancements: Clinical validation, integration into medical workflows.
-
-
-4. Sign Language Recognition System
-Technologies Used: Python, Mediapipe, Keras (LSTM), OpenCV, NumPy, TensorBoard
-Project Scope: 
-Real-time sign language recognition using computer vision & deep learning.
-Used Mediapipe for real-time hand landmark detection.
-Trained LSTM-based deep learning models to classify hand gestures.
-Achieved 90% accuracy in gesture-to-text translation.
-Future Enhancements: Expanded dataset, better generalization for multiple sign languages.
-
-
-
-
-
-
-
-
-
-5. Sorting Algorithm Visualization using Vision Transformers & GANs
-Technologies Used: Python, PyTorch, Vision Transformers, Conditional GANs
-Project Scope: 
-Created AI-powered sorting visualization using deep learning.
-Built a dataset of 1000+ images, trained Vision Transformers & GANs for improved sorting interpretability.
-Findings: Achieved 40% improvement in clarity & coherence of sorting visualizations.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6. NLP-Based Vocabulary Generation for Text Processing
-Technologies Used: Python, Scikit-learn, CSV, Collections (Counter)
-Project Scope: 
-Built a word frequency analysis tool to preprocess text for NLP tasks.
-Replaced rare words (<3 occurrences) with <unk> for better model generalization.
-Created a structured vocabulary file (vocab.txt) for text tokenization.
-
-7. Multimodal Emotion Recognition using Early Fusion
-Technologies Used: PyTorch, MediaPipe, OpenCV, ResNet18, LSTM, Audio/Text/Visual Features
-Project Scope:
-Currently developing a multimodal emotion recognition model that integrates facial expressions, speech tone, and textual context using an early fusion framework. Facial landmarks are extracted via MediaPipe and passed into a ResNet18 for visual encoding. Simultaneously, pitch/tone-based audio features are captured, and transcribed utterances are processed into embeddings. These feature vectors from all three modalities are fused before being fed into an emotion classification model.
-The system is trained and evaluated on datasets like MELD and FER2013. Separate unimodal evaluations were conducted before fusion to benchmark improvements. This approach helped capture cross-modal emotional cues and improve classification accuracy over standalone models. Confusion matrices and evaluation metrics showed clear gains, especially in classes like “happy” and “surprise,” highlighting the power of fusion-based multimodal systems.
-
-🔹 Natural Language Processing (NLP) Coursework & Projects Summary
-Technologies Used: Python, NLTK, Scikit-learn, TF-IDF, Word2Vec, Perceptron, SVM, Logistic Regression, BeautifulSoup
-Projects Completed:
-Amazon Product Review Sentiment Classification:
-Built classifiers for binary and ternary sentiment classification using Amazon Office Product reviews. Applied preprocessing steps such as contraction expansion, HTML and URL removal, lemmatization, and stopword filtering. Converted reviews into TF-IDF vectors and used classifiers like Perceptron, SVM, and Logistic Regression.
-Achieved high test accuracy (up to 91%) with optimized models and robust evaluation using precision, recall, and F1-score.
-Word Embedding Comparison:
-Compared pre-trained Word2Vec (Google News) and custom-trained embeddings. Custom embeddings often performed better on domain-specific sentiment classification. Analyzed the trade-off between embedding dimensionality and model accuracy.
-Vocabulary Preprocessing Tool:
-Developed a system that builds vocabularies for NLP tasks by counting word frequency, replacing rare tokens with <unk>, and storing structured output for downstream use.
-
-
-🔹 Multimodal Emotion Recognition Projects Summary
+2. Multimodal Emotion Recognition Projects Summary
 Technologies Used: PyTorch, MediaPipe, OpenCV, ResNet18, LSTM, CNN, Audio/Text/Visual Fusion
 Projects Completed:
 Facial Landmark Detection & Emotion Classification (FER2013):
@@ -176,10 +64,107 @@ Extracted key facial landmarks (eyes, mouth corners) using MediaPipe. Trained Re
 Multimodal Fusion Model (MELD-based):
 Built a multimodal system integrating facial video (visual), speech tone (audio), and transcript (text) features using an early fusion approach. Each modality had its own feature extractor, and the combined features were fed into a unified classifier.
 Conducted unimodal and fusion experiments, plotted confusion matrices, and found that early fusion improved accuracy on nuanced emotions compared to using single modalities alone.
-Cue-based Behavioral Analysis:
-Analyzed behavioral cues from 60+ emotion-labeled videos to manually identify correlations between tone and emotions (e.g., “raised voice” → Anger, “soft voice” → Sadness). Confirmed findings using chi-square tests and compared with model-predicted labels.
-Sequence Modeling (CSCI535):
-Implemented Conv1D and LSTM classifiers for noisy signal sequences (e.g., sine and sawtooth). Explored feature extraction using derivatives and built PyTorch datasets from scratch for synthetic sequential data.
+
+🧠 Multimodal Emotion Recognition
+
+This project came out of my curiosity about how machines can understand not just what people are saying, but also how they’re saying it — essentially, getting machines to pick up on emotion like humans do.
+
+Using the MELD dataset, I built a multimodal emotion classifier that fuses three streams:
+
+Visual input: I used MediaPipe to extract facial landmarks from each video frame and passed them through a ResNet-based encoder to capture micro-expressions.
+Audio features: With Librosa, I extracted MFCCs, zero-crossing rates, and pitch contours to detect tone shifts and emotional vocal patterns.
+Textual content: Processed transcripts using TF-IDF and Word2Vec embeddings to encode semantic meaning.
+These streams were aligned frame-by-frame and fused using early fusion before passing them into a bi-directional LSTM, which captured temporal dependencies across the modalities. The final classification yielded ~74% accuracy, outperforming unimodal baselines significantly.
+
+This wasn’t just a deep learning experiment — it was about bridging the gap between cold code and human feeling. It made me appreciate the nuances in multimodal fusion and the art of aligning signals that speak different languages.
+
+3. Gallbladder Stone Detection using Ultrasound Images 🏥🔍
+Problem Statement:
+Ultrasound imaging is widely used for gallbladder stone detection, but manual diagnosis is prone to errors due to image noise, low contrast, and variability in stone shape/size.
+The goal is to automate stone detection using computer vision and deep learning, making it a cost-effective alternative to MRI/CT scans.
+Technical Approach:
+✔ Gallbladder Identification & ROI Extraction:
+U-Net segmentation was used to localize the gallbladder and extract the region of interest (ROI).
+Contour detection & morphological operations further refined the extracted region.
+✔ Deep Learning Model for Stone Detection:
+CNN Architectures Used: 
+VGG16, ResNet50, MobileNetV2 for feature extraction.
+Custom CNN with Second-Order Pooling for better texture-based feature learning.
+Why Second-Order Pooling? 
+It captures high-order relationships between pixel intensities, improving precision in irregular stone detection.
+✔ Results & Impact:
+Achieved 30% improvement in detection accuracy compared to standard ultrasound methods.
+Proposed AI-driven detection model that significantly reduces misdiagnosis rates.
+Demonstrated a 30% cost reduction by replacing expensive MRI/CT scans with AI-based ultrasound interpretation.
+
+This project focused on improving the accuracy and accessibility of gallbladder stone detection using deep learning. Traditional ultrasound scans can be noisy, and diagnosis often varies by clinician. So I built a system that leverages VGG16, ResNet50, and MobileNetV2 with second-order pooling to identify stones with better feature learning.
+
+I used region proposal networks (RPNs) to localize the gallbladder and extracted ROIs. Preprocessing steps involved CLAHE contrast enhancement, contour filtering, and OpenCV pipelines to refine image input.
+
+Looking ahead, this system could be validated clinically and integrated into hospital diagnostic workflows.
+
+4. Sign Language Recognition System 🤟📜
+Problem Statement:
+Hearing-impaired individuals rely on sign language, but real-time translation into text/speech remains challenging.
+The goal is to develop an AI-based system that translates sign gestures into text with high accuracy.
+Technical Approach:
+✔ Data Collection & Preprocessing:
+Used MediaPipe Hands API for real-time hand tracking and keypoint extraction.
+Created a dataset of various hand signs with multiple lighting conditions and angles for robustness.
+Applied Gaussian smoothing & normalization for consistent input representation.
+✔ Deep Learning Model:
+LSTM + CNN Hybrid Model: 
+CNN (Convolutional Neural Network): Extracts spatial features from hand gestures.
+LSTM (Long Short-Term Memory): Captures temporal dependencies in sequential hand movements.
+Trained with TensorFlow & PyTorch, optimized with Adam optimizer and learning rate decay.
+✔ Results & Impact:
+Achieved 90% accuracy in real-time sign language-to-text translation.
+Improved communication efficiency by 60% for hearing-impaired individuals.
+Integrated into a user-friendly real-time interface using OpenCV for video processing.
+
+5. Sorting Visualization with Vision Transformers & Conditional GANs 🔢👁️
+Problem Statement:
+Sorting algorithms are often difficult to visualize and interpret.
+The goal is to use Vision Transformers (ViTs) & Conditional GANs to generate high-quality sorting visualizations and analyze attention mechanisms for better interpretability.
+Technical Approach:
+✔ Dataset Creation:
+Generated a dataset of 250 sorting sequences (~1000+ images) representing different sorting algorithms.
+Included algorithms: QuickSort, MergeSort, BubbleSort, HeapSort.
+Labeled images with sorting states and positions to train the model.
+✔ Model Selection:
+Vision Transformers (ViTs): 
+Used Self-Attention Mechanism to capture relationships between elements in a sorting sequence.
+Fine-tuned on sorting sequences to enhance temporal coherence of steps.
+Conditional GANs (cGANs): 
+Generator: Generates sorting sequence visualizations.
+Discriminator: Ensures the generated sequences match real sorting patterns.
+✔ Results & Impact:
+Improved clarity and coherence of sorting steps by 40%.
+Attention heatmaps highlighted key regions, improving interpretability.
+Created a better educational tool for sorting algorithm learning.
+
+6. YouTube Video Summarizer (LLM & Generative AI) 🎥📜
+Problem Statement:
+YouTube videos are often too long, making it difficult for users to extract key insights quickly.
+The goal is to use Large Language Models (LLMs) & Generative AI to summarize videos concisely while retaining key information.
+Technical Approach:
+✔ Data Extraction:
+Used YouTube Transcript API to extract spoken text from videos.
+✔ Summarization Approach:
+Used Google Gemini AI & GPT-based models for abstractive summarization.
+Prompt engineered models for extractive summarization (selecting key sentences).
+✔ Optimization & Performance:
+Implemented ROUGE & BLEU Score evaluation to measure summary quality.
+Achieved 75% reduction in video length while maintaining key information integrity.
+Created a user-friendly interface in Streamlit for easy interaction.
+
+🔹 Final Takeaways (What Makes These Projects Stand Out?)
+✔ Gallbladder Stone Detection: Medical AI with novel second-order pooling for image classification.
+✔ Sign Language Recognition: CNN + LSTM hybrid model for real-time gesture recognition.
+✔ Sorting Visualization: First-of-its-kind application of ViTs & GANs for sorting animations.
+✔ YouTube Summarizer: LLM-powered abstractive summarization with optimized T5 & BART models.
+Technical Breakdown of Your Work Experience & Projects 🚀
+Below is a detailed technical explanation of your work experience, projects, and key contributions.
 
 
 🔹 Certifications & Technical Skills
@@ -212,270 +197,9 @@ Why You Should Hire Me
 ✅ Cloud & Deployment: Skilled in Azure, OCI, and Streamlit for scalable AI solutions.
 
 
+Internships: 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-🔹 Summary
-Overview
-The summary highlights your expertise in AI, machine learning, deep learning, NLP, and cloud computing. It also mentions:
-Projects: Sentiment analysis, medical imaging, sign language recognition, and transcript summarization.
-Technologies: TensorFlow, PyTorch, Scikit-learn, Word2Vec, LLMs, SVMs, MLPs.
-Internships: At ResoluteAI and Suvidha Foundation, where you optimized AI solutions.
-Key Takeaways
-You have hands-on experience across various AI subfields.
-Your projects demonstrate the real-world application of AI and ML.
-Your work experience shows problem-solving and optimization skills.
-
-🔹 Professional Experience
-Deep Learning Engineer Intern | ResoluteAI
-Technologies Used: YOLOv8, OpenCV, TensorFlow, PyTorch, Scikit-learn, Streamlit
-Key Contributions
-AI-Based Nested Pipe Detection System
-Built an object detection system using YOLOv8 to identify nested pipes.
-Improved efficiency by 40% by reducing false detections.
-YOLOv8-Based Sapling Counting Model
-Designed a sapling detection & counting model for aerial imagery.
-Achieved 95% accuracy, improving monitoring efficiency.
-Pipe Defect Classification Using Image Processing
-Applied thresholding & dilation to enhance defect visibility.
-Automated defect detection, reducing manual labor by 3 hours per case.
-Built a Streamlit Web App for AI-Based Drone Analysis
-Created an interactive dashboard for real-time drone data visualization.
-Allowed users to analyze detected objects and defects.
-Mentorship & Leadership
-Led and mentored 3 junior members on AI model development.
-Helped them understand YOLO, CNNs, and optimization techniques.
-
-Machine Learning Intern | Suvidha Foundation
-Technologies Used: OpenCV, Scikit-learn, Python
-Key Contributions
-Text Extraction Model Using Image Processing
-Implemented erosion, dilation, and thresholding for text extraction.
-Ensured 100% text readability in scanned documents.
-Fundraising for Underprivileged Girls
-Led an initiative that raised funds for 100+ underprivileged girls.
-Managed social media campaigns and secured sponsorships.
-
-🔹 AI & Machine Learning Projects
-1. Sentiment Analysis on Amazon Product Reviews
-Technologies Used: Python, Pandas, NumPy, NLTK, BeautifulSoup, Scikit-learn, TensorFlow, PyTorch, Word2Vec
-Project Scope
-Performed sentiment classification (binary & ternary) on Amazon Office Products reviews.
-Preprocessing steps:
-Lowercased text, removed HTML tags, URLs, punctuation, stop words.
-Applied lemmatization for standardizing words.
-Word Embeddings:
-Compared pre-trained Word2Vec (Google News) vs. custom Word2Vec.
-Model Training & Evaluation:
-Binary classification: Used SVM, Perceptron, MLP.
-Ternary classification: Used MLP with 300D & 10D embeddings.
-Findings
-Custom Word2Vec sometimes outperformed pre-trained embeddings.
-Reducing embeddings (300D → 10D) significantly reduced accuracy.
-Best Model: Ternary MLP with custom 300D Word2Vec embeddings.
-
-2. YouTube Transcript Summarizer (LLM & Generative AI)
-Technologies Used: Python, Streamlit, YouTube Transcript API, Google Gemini AI, dotenv
-Project Scope
-Extracts YouTube video transcripts.
-Uses Google Gemini AI to generate concise summaries.
-Built a Streamlit web interface for easy user interaction.
-Future Enhancements
-Multi-language support.
-Sentiment analysis to gauge video tone.
-Keyword extraction for key topics.
-
-3. Gallbladder Stone Detection Using Deep Learning
-Technologies Used: Python, TensorFlow/PyTorch, CNNs (VGG16, ResNet50, MobileNetV2), Scikit-learn
-Project Scope
-Medical AI solution for detecting gallbladder stones in ultrasound images.
-Used region proposal networks (RPN) for extracting the region of interest (ROI).
-Implemented second-order pooling to enhance feature representation.
-Impact
-Improved detection accuracy by 30%.
-Offered a cost-effective alternative to MRI & CT scans.
-Future Enhancements
-Clinical validation & regulatory approvals.
-Integration into hospital diagnostic workflows.
-
-4. Sign Language Recognition System
-(Same as previously detailed)
-
-5. Sorting Algorithm Visualization Using Vision Transformers & GANs
-Technologies Used: Python, PyTorch, Vision Transformers, Conditional GANs
-Project Scope
-Developed an AI-based sorting visualization tool.
-Built a dataset of 1000+ images to train Vision Transformers & GANs.
-Findings
-Improved clarity of sorting visualizations by 40%.
-Helped students better understand sorting mechanics.
-
-6. NLP-Based Vocabulary Generation for Text Processing
-Technologies Used: Python, Scikit-learn, CSV, Collections (Counter)
-Project Scope
-Built a word frequency analysis tool for text preprocessing in NLP.
-Replaced rare words (<3 occurrences) with <unk> for better generalization.
-Created a structured vocabulary file (vocab.txt) for tokenization.
-
-🔹 Certifications & Technical Skills
-Certifications
-✅ Microsoft Azure Fundamentals (AZ-900)
-✅ Deep Learning (IBM)
-✅ Large Language Models (Google)
-✅ Generative AI (Google)
-✅ CS50 (Harvard)
-✅ Introduction to Deep Learning (MIT)
-Technical Skills
-Deep Learning & AI: TensorFlow, PyTorch, CNNs, YOLOv8, LSTMs, Vision Transformers
-Machine Learning: Scikit-learn, SVM, Perceptron, MLP, Logistic Regression, Naïve Bayes
-Natural Language Processing: Word2Vec, Sentiment Analysis, LLMs
-Computer Vision: OpenCV, Image Processing, Region Proposal Networks (RPN)
-Cloud & Deployment: Microsoft Azure, OCI, Streamlit
-Data Science & Engineering: Pandas, NumPy, SQL, Data Cleaning, Power BI, Tableau
-
-
-🔹 Leadership & Extracurriculars
-Marketing Head | BloomBox
-Organized events for 1000+ attendees.
-Secured sponsorships & managed PR activities.
-Fundraising Leader | Suvidha Foundation
-Raised funds for 100+ underprivileged girls.
-Hackathon Competitor
-Led AI & ML-based hackathon teams solving real-world problems.
-
-🔹 Why You Should Hire Me
-✅ AI & ML Expertise: Hands-on experience with cutting-edge AI models, NLP, & computer vision.
-✅ Problem-Solving Mindset: Proven ability to enhance processes & optimize AI solutions.
-✅ Leadership & Teamwork: Experience in mentoring juniors & leading AI teams.
-✅ Cloud & Deployment: Skilled in Azure, OCI, and Streamlit for scalable AI solutions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Technical Breakdown of Your Academic Projects 🚀
-Below is a detailed technical explanation of each of your projects, including methods, models, and technologies used.
-
-1️⃣ Gallbladder Stone Detection using Ultrasound Images 🏥🔍
-Problem Statement:
-Ultrasound imaging is widely used for gallbladder stone detection, but manual diagnosis is prone to errors due to image noise, low contrast, and variability in stone shape/size.
-The goal is to automate stone detection using computer vision and deep learning, making it a cost-effective alternative to MRI/CT scans.
-Technical Approach:
-✔ Preprocessing & Image Enhancement:
-OpenCV was used to remove noise, apply contrast enhancement, and filter ultrasound artifacts.
-Adaptive histogram equalization (CLAHE) improved contrast for better feature extraction.
-✔ Gallbladder Identification & ROI Extraction:
-U-Net segmentation was used to localize the gallbladder and extract the region of interest (ROI).
-Contour detection & morphological operations further refined the extracted region.
-✔ Deep Learning Model for Stone Detection:
-CNN Architectures Used: 
-VGG16, ResNet50, MobileNetV2 for feature extraction.
-Custom CNN with Second-Order Pooling for better texture-based feature learning.
-Why Second-Order Pooling? 
-It captures high-order relationships between pixel intensities, improving precision in irregular stone detection.
-✔ Results & Impact:
-Achieved 30% improvement in detection accuracy compared to standard ultrasound methods.
-Proposed AI-driven detection model that significantly reduces misdiagnosis rates.
-Demonstrated a 30% cost reduction by replacing expensive MRI/CT scans with AI-based ultrasound interpretation.
-
-2️⃣ Sign Language Recognition System 🤟📜
-Problem Statement:
-Hearing-impaired individuals rely on sign language, but real-time translation into text/speech remains challenging.
-The goal is to develop an AI-based system that translates sign gestures into text with high accuracy.
-Technical Approach:
-✔ Data Collection & Preprocessing:
-Used MediaPipe Hands API for real-time hand tracking and keypoint extraction.
-Created a dataset of various hand signs with multiple lighting conditions and angles for robustness.
-Applied Gaussian smoothing & normalization for consistent input representation.
-✔ Deep Learning Model:
-LSTM + CNN Hybrid Model: 
-CNN (Convolutional Neural Network): Extracts spatial features from hand gestures.
-LSTM (Long Short-Term Memory): Captures temporal dependencies in sequential hand movements.
-Trained with TensorFlow & PyTorch, optimized with Adam optimizer and learning rate decay.
-✔ Results & Impact:
-Achieved 90% accuracy in real-time sign language-to-text translation.
-Improved communication efficiency by 60% for hearing-impaired individuals.
-Integrated into a user-friendly real-time interface using OpenCV for video processing.
-
-3️⃣ Sorting Visualization with Vision Transformers & Conditional GANs 🔢👁️
-Problem Statement:
-Sorting algorithms are often difficult to visualize and interpret.
-The goal is to use Vision Transformers (ViTs) & Conditional GANs to generate high-quality sorting visualizations and analyze attention mechanisms for better interpretability.
-Technical Approach:
-✔ Dataset Creation:
-Generated a dataset of 250 sorting sequences (~1000+ images) representing different sorting algorithms.
-Included algorithms: QuickSort, MergeSort, BubbleSort, HeapSort.
-Labeled images with sorting states and positions to train the model.
-✔ Model Selection:
-Vision Transformers (ViTs): 
-Used Self-Attention Mechanism to capture relationships between elements in a sorting sequence.
-Fine-tuned on sorting sequences to enhance temporal coherence of steps.
-Conditional GANs (cGANs): 
-Generator: Generates sorting sequence visualizations.
-Discriminator: Ensures the generated sequences match real sorting patterns.
-✔ Results & Impact:
-Improved clarity and coherence of sorting steps by 40%.
-Attention heatmaps highlighted key regions, improving interpretability.
-Created a better educational tool for sorting algorithm learning.
-
-4️⃣ YouTube Video Summarizer (LLM & Generative AI) 🎥📜
-Problem Statement:
-YouTube videos are often too long, making it difficult for users to extract key insights quickly.
-The goal is to use Large Language Models (LLMs) & Generative AI to summarize videos concisely while retaining key information.
-Technical Approach:
-✔ Data Extraction:
-Used YouTube Transcript API to extract spoken text from videos.
-Applied Text Preprocessing (Stopword Removal, Lemmatization, Sentence Segmentation).
-✔ Summarization Approach:
-Used Google Gemini AI & GPT-based models for abstractive summarization.
-Fine-tuned T5 & BART models for extractive summarization (selecting key sentences).
-✔ Optimization & Performance:
-Implemented ROUGE & BLEU Score evaluation to measure summary quality.
-Achieved 75% reduction in video length while maintaining key information integrity.
-Created a user-friendly interface in Streamlit for easy interaction.
-
-🔹 Final Takeaways (What Makes These Projects Stand Out?)
-✔ Gallbladder Stone Detection: Medical AI with novel second-order pooling for image classification.
-✔ Sign Language Recognition: CNN + LSTM hybrid model for real-time gesture recognition.
-✔ Sorting Visualization: First-of-its-kind application of ViTs & GANs for sorting animations.
-✔ YouTube Summarizer: LLM-powered abstractive summarization with optimized T5 & BART models.
-Technical Breakdown of Your Work Experience & Projects 🚀
-Below is a detailed technical explanation of your work experience, projects, and key contributions.
-
-1️⃣ Deep Learning Engineer Intern | ResoluteAI (June 2023 – April 2024)
+1️. Deep Learning Engineer Intern | ResoluteAI (June 2023 – April 2024)
 📌 Technologies Used: YOLOv8, OpenCV, TensorFlow, PyTorch, Scikit-learn, Streamlit
 Key Contributions & Technical Details:
 🔹 AI-Based Nested Pipe Detection System (40% Efficiency Improvement)
@@ -532,7 +256,7 @@ The app generates detection heatmaps & confidence scores for easy interpretation
 ✔ Results:
 Allowed real-time AI-based drone monitoring through a user-friendly web interface.
 
-2️⃣ Machine Learning Intern | Suvidha Foundation (June 2023 – July 2023)
+2️. Machine Learning Intern | Suvidha Foundation (June 2023 – July 2023)
 📌 Technologies Used: OpenCV, Scikit-learn, Python
 Key Contributions & Technical Details:
 🔹 Text Extraction Model (100% Readable Text Using Image Processing)
@@ -554,172 +278,25 @@ Improved OCR accuracy by removing background noise & distortions.
 ✔ Led a fundraising campaign to support 100+ underprivileged girls in education.
 ✔ Created data-driven strategies using Python analytics to optimize donation outreach.
 
-3️⃣ Sentiment Analysis on Amazon Product Reviews 📦
-📌 Technologies Used: Python, Pandas, NumPy, NLTK, BeautifulSoup, Scikit-learn, TensorFlow, PyTorch, Word2Vec
-Project Scope & Technical Breakdown:
-✔ Preprocessing & Feature Engineering:
-Text Cleaning: 
-Lowercased text, removed HTML tags, URLs, punctuation, and stopwords.
-Applied lemmatization to normalize words.
-Word Embeddings: 
-Used pre-trained Word2Vec (Google News, 300D).
-Trained custom Word2Vec to learn domain-specific embeddings.
-✔ Model Training & Evaluation:
-Binary Classification Models: 
-Linear SVM, Perceptron, Multilayer Perceptron (MLP).
-Ternary Classification Models (Positive, Neutral, Negative): 
-MLP with 300D & reduced 10D embeddings.
-✔ Findings:
-Custom Word2Vec embeddings outperformed pre-trained ones in some cases.
-Reducing embeddings (300D → 10D) significantly decreased accuracy.
-Best Model: Ternary MLP with custom 300D Word2Vec embeddings.
+3. Marketing Head — BloomBox, Entrepreneurship Cell
+K.J. Somaiya College · 2021–2022
 
-4️⃣ NLP-Based Vocabulary Generation for Text Processing 📚
-📌 Technologies Used: Python, Scikit-learn, CSV, Collections (Counter)
-Project Scope & Technical Breakdown:
-✔ Built a word frequency analysis tool to preprocess text for NLP tasks.
-✔ Pipeline Used:
-Tokenization & Lemmatization to normalize words.
-Count word frequencies using Counter() from Python collections.
-Rare word replacement: 
-Words occurring <3 times were replaced with <unk> for better model generalization.
-Created a structured vocabulary file (vocab.txt) for tokenization in NLP models.
-✔ Impact:
-Improved data preprocessing for downstream NLP tasks.
-Provided a clean, structured vocabulary for text-based ML models.
+At BloomBox, I wasn’t just organizing events — I was helping run a full-fledged student startup incubator.
+Built all pitch decks, emails, and handled content + marketing strategy
+This taught me how to write, how to pitch, and how to make things happen even with messy resources and tighter timelines.
+Guided team of 8 in executing high-profile events for over 1000 attendees including speaker sessions, and an entrepreneurial summit 
+featuring renowned speaker Mr. Ashneer Grover. Secured 70% sponsorship with strategic sponsor walks, PR activities 
+• Arranged logistics, managed operations travel, and accommodation for 2 guest speakers, ensuring a seamless experience 
+• Spearheaded marketing campaigns increasing registrations by 20%, operated finances through budgeting and resource allocation
 
-🔹 Final Takeaways (What Makes These Stand Out?)
-✔ AI-Based Industrial Solutions: Applied YOLOv8, ResNet, and OpenCV for real-world manufacturing & agriculture automation.
-✔ NLP Expertise: Word embeddings, sentiment analysis, vocabulary generation.
-✔ Web-Based AI Applications: Built a Streamlit web app for drone-based AI analysis.
-✔ Social Impact: Used ML & fundraising strategies to support underprivileged students.
-Would you like Python code samples for any of these? 🚀
+CONTACT  
+Email: khushalbjhaveri@gmail.com  
+LinkedIn: https://linkedin.com/in/khushaljhaveri  
+GitHub: https://github.com/KBJ19
 
-
-
-
-
-
-
-
-
-
-🚀 Comprehensive Machine Learning & AI Cheat Sheet
-
-🔹 Machine Learning Fundamentals
-1️⃣ Supervised Learning (Labeled Data)
-Regression: Predicts continuous values (e.g., house prices, stock prices).
-Classification: Predicts discrete categories (e.g., spam detection, fraud detection).
-Common Algorithms: 
-Linear Regression → Simple, interpretable model for numerical predictions.
-Logistic Regression → Used for binary classification.
-Decision Trees → Rule-based model for classification & regression.
-Random Forest → Ensemble of decision trees, reduces overfitting.
-Support Vector Machines (SVM) → Effective in high-dimensional spaces.
-Gradient Boosting (XGBoost, LightGBM, CatBoost) → Highly optimized boosting algorithms.
-Neural Networks → Multi-layered models for complex patterns.
-2️⃣ Unsupervised Learning (No Labeled Data)
-Clustering: Groups similar data points together. 
-K-Means → Assigns points to K clusters based on similarity.
-DBSCAN → Finds arbitrarily shaped clusters, good for noise handling.
-Hierarchical Clustering → Builds a tree of clusters (dendrogram).
-Dimensionality Reduction: Reduces data complexity while retaining key information. 
-Principal Component Analysis (PCA) → Converts data into principal components.
-t-SNE & UMAP → Used for high-dimensional data visualization.
-Anomaly Detection: Identifies outliers in datasets. 
-Isolation Forest → Detects rare anomalies efficiently.
-Autoencoders → Neural network-based anomaly detection.
-3️⃣ Reinforcement Learning (Trial & Error Learning)
-Key Concepts: 
-Agent → Learns to make decisions.
-Environment → Where the agent interacts.
-State, Action, Reward, Policy → Defines agent behavior.
-Popular Algorithms: 
-Q-Learning → Model-free RL algorithm using a Q-table.
-Deep Q-Networks (DQN) → Combines deep learning & Q-learning.
-Policy Gradient Methods → Optimize policy directly.
-Actor-Critic Methods → Mixes value-based & policy-based learning.
-
-🔹 Machine Learning Models & Techniques
-1️⃣ Decision Trees & Random Forest 🌳
-Decision Trees: 
-Uses Gini Impurity or Entropy to decide feature splits.
-Prone to overfitting, especially on small datasets.
-Pruning helps control tree depth and improve generalization.
-Random Forest: 
-Bootstrapping (Bagging) → Trains multiple decision trees on different data subsets.
-Feature Randomness → Each tree sees a random subset of features.
-Output Aggregation → Classification uses majority vote, regression uses averaging.
-2️⃣ K-Means Clustering 🔵🔴🟢
-Steps: 
-Choose K (number of clusters).
-Assign data points to closest centroid.
-Update centroids iteratively until convergence.
-Choosing Optimal K: 
-Elbow Method: Finds point of diminishing returns.
-Silhouette Score: Measures how well-separated clusters are.
-3️⃣ Hierarchical Clustering 🏗️
-Agglomerative (Bottom-Up): Each data point starts as a cluster, then merges into larger ones.
-Divisive (Top-Down): Start with all data points in one cluster, split into smaller groups.
-Linkage Methods: Single, Complete, Average.
-
-🔹 Deep Learning Architectures
-1️⃣ Convolutional Neural Networks (CNNs) 🖼️
-Used for image processing & computer vision.
-Common Layers: 
-Convolutional Layer → Detects spatial patterns.
-Pooling Layer → Reduces dimensions (Max/Avg Pooling).
-Fully Connected Layer → Outputs predictions.
-Popular Architectures: VGG16, ResNet, MobileNet, EfficientNet.
-2️⃣ Recurrent Neural Networks (RNNs, LSTMs, GRUs) 🔄
-Used for time-series & sequential data (speech, text, stock prices).
-LSTM (Long Short-Term Memory): Overcomes vanishing gradients.
-GRU (Gated Recurrent Unit): Simplified version of LSTM, faster to train.
-3️⃣ Transformers (BERT, GPT, ViTs) 🔥
-BERT: Encoder-only, best for understanding text.
-GPT: Decoder-only, best for generating text.
-ViTs (Vision Transformers): Image classification without CNNs.
-
-🔹 Model Evaluation Metrics
-1️⃣ Regression Metrics
-R² Score: Measures variance explained by the model.
-MSE & RMSE: Penalizes large errors, RMSE is more interpretable.
-MAE (Mean Absolute Error): Measures absolute differences between predictions and actual values.
-2️⃣ Classification Metrics
-Accuracy: Overall correctness.
-Precision & Recall: Trade-off between false positives & false negatives.
-F1 Score: Harmonic mean of precision & recall.
-AUC-ROC Curve: Evaluates classification performance at different thresholds.
-
-🔹 Model Optimization & Debugging
-1️⃣ Bias-Variance Tradeoff
-High Bias: Model too simple, underfits.
-High Variance: Model too complex, overfits.
-Solution: More data, regularization, feature selection.
-2️⃣ Regularization Techniques
-L1 (Lasso): Shrinks coefficients, some become zero (feature selection).
-L2 (Ridge): Shrinks all coefficients, prevents overfitting.
-Dropout: Randomly drops neurons to prevent overfitting.
-3️⃣ Hyperparameter Tuning
-Grid Search: Exhaustive search over hyperparameter space.
-Random Search: Random sampling of hyperparameters.
-Bayesian Optimization: Uses prior results to select next best set of hyperparameters.
-
-🔹 Explainability & Interpretability
-LIME: Local surrogate models for individual predictions.
-SHAP: Assigns feature importance scores for each prediction.
-Counterfactual Explanations: Suggests changes in input features to alter model outcomes.
-
-🔹 AI Use Cases & Industry Applications
-1️⃣ AI in Healthcare
-Gallbladder Stone Detection (Deep Learning + Ultrasound)
-Medical Image Classification (CNNs, U-Net)
-2️⃣ NLP Applications
-Sentiment Analysis (Amazon Reviews, Word2Vec, MLP)
-YouTube Summarization (LLMs, GPT, BART, T5)
-Sign Language Recognition (CNN + LSTM, OpenCV)
-3️⃣ AI for Industrial Automation
-YOLOv8 for Object Detection (Pipe Defect, Sapling Counting)
-AI-based Drone Analysis (Streamlit Web App)
-Would you like Python implementations for any of these topics? 🚀
-
+BLOG LINKS  
+- Amazon: https://building-an-ai-that-understands-emotions.hashnode.dev/how-i-used-tf-idf-word2vec-and-mlps-to-analyze-sentiment-in-amazon-reviews  
+- YouTube: https://building-an-ai-that-understands-emotions.hashnode.dev/summarizing-youtube-with-ai-building-a-transcript-to-insight-tool-using-llms  
+- Gallbladder: https://building-an-ai-that-understands-emotions.hashnode.dev/detecting-gallbladder-stones-with-ai-a-deep-learning-approach-using-ultrasound  
+- Sign Language: https://building-an-ai-that-understands-emotions.hashnode.dev/sign-language-to-text-using-ai-real-time-gesture-recognition-with-mediapipe-and-lstms  
+- Sorting Visualizer: https://building-an-ai-that-understands-emotions.hashnode.dev/visualizing-sorting-algorithms-with-ai-using-vision-transformers-and-gans-to-teach-logic
