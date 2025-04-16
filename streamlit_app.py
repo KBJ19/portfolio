@@ -8,7 +8,7 @@ st.markdown("""
     <style>
     .popup-hint {
         position: fixed;
-        top: 40px;
+        top: 60px;
         left: 20px;
         background-color: #111827;
         color: #fff;
