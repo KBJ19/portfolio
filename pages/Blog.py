@@ -14,7 +14,7 @@ st.markdown("---")
 blog_posts = [
     {
         "emoji": "🎭",
-        "title": "Multimodal Emotion Recognition System Using BERT, HuBERT, EfficientNet, and Fusion Techniques",
+        "title": "Multimodal Emotion Recognition System BERT, HuBERT, EfficientNet, and Fusion Techniques",
         "url": "https://building-an-ai-that-understands-emotions.hashnode.dev/how-i-built-a-multimodal-emotion-recognition-system-using-bert-hubert-efficientnet-and-fusion-techniques"
     },
     {
