@@ -13,6 +13,11 @@ st.markdown("---")
 
 blog_posts = [
     {
+        "emoji": "🎭",
+        "title": "How I Built a Multimodal Emotion Recognition System Using BERT, HuBERT, EfficientNet, and Fusion Techniques",
+        "url": "https://building-an-ai-that-understands-emotions.hashnode.dev/how-i-built-a-multimodal-emotion-recognition-system-using-bert-hubert-efficientnet-and-fusion-techniques"
+    },
+    {
         "emoji": "📦",
         "title": "How I Used TF-IDF, Word2Vec, and MLPs to Analyze Sentiment in Amazon Reviews",
         "url": "https://building-an-ai-that-understands-emotions.hashnode.dev/how-i-used-tf-idf-word2vec-and-mlps-to-analyze-sentiment-in-amazon-reviews"
