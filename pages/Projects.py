@@ -12,13 +12,30 @@ with st.expander("🧠 Multimodal Emotion Recognition"):
     st.markdown("""
 This project came out of my curiosity about how machines can understand not just *what* people are saying, but also *how* they’re saying it — essentially, getting machines to pick up on emotion like humans do.
 
-Using the **MELD dataset**, I built a multimodal emotion classifier that fuses three streams:
-- **Visual input**: I used **MediaPipe** to extract facial landmarks from each video frame and passed them through a ResNet-based encoder to capture micro-expressions.
-- **Audio features**: With **Librosa**, I extracted MFCCs, zero-crossing rates, and pitch contours to detect tone shifts and emotional vocal patterns.
-- **Textual content**: Processed transcripts using **TF-IDF** and **Word2Vec** embeddings to encode semantic meaning.
+This project tackles the challenge of recognizing human emotions more accurately by combining three rich modalities: textual transcripts, vocal tone, and facial expressions. Using the MELD dataset, we built a pipeline that processes raw videos end-to-end.
 
-These streams were aligned frame-by-frame and fused using early fusion before passing them into a **bi-directional LSTM**, which captured temporal dependencies across the modalities. The final classification yielded ~74% accuracy, outperforming unimodal baselines significantly.
+🔧 Key Features:
 
+**Text Modality:** Fine-tuned BERT on emotion-labeled utterances with contextual embeddings using speaker tags and dialogue history.
+
+**Audio Modality:** Extracted deep prosodic features via HuBERT; applied audio augmentations (pitch shift, noise, speed) to improve class balance.
+
+**Video Modality:** Used MTCNN to crop face frames, trained EfficientNet-B3 on stacked frame sequences for per-emotion classification.
+
+**Fusion:** Implemented both early and late fusion strategies. The best performance came from weighted late fusion: 50% text, 30% audio, 20% video.
+
+**LLM Integration:** Fine-tuned a merged DeepSeek model on facial Action Units extracted using OpenFace. Generated emotion explanations using prompt engineering for better interpretability.
+
+**Streamlit UI:** Developed an app where users upload video clips and receive the detected primary emotion, backed by the best-performing fusion model.
+
+**📊 Results:**
+
+Fusion accuracy reached 60%, a significant improvement over individual modality performance.
+
+The system successfully captured subtle cues in speech, body language, and language, outperforming unimodal models.
+
+💡 Impact:
+This project demonstrates how multimodal AI can be used to enhance emotionally intelligent systems for applications like mental health screening, customer sentiment analysis, and empathetic AI agents.
 This wasn’t just a deep learning experiment — it was about bridging the gap between cold code and human feeling. It made me appreciate the nuances in multimodal fusion and the art of aligning signals that speak different languages.
 """)
     st.caption("Tags: #MultimodalAI #EmotionRecognition #LSTM #MELD #MediaPipe #ResNet #AudioTextVision")
